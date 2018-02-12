@@ -20,6 +20,7 @@
   <script src="data/equipment.thrown.data.js"></script>
   <!-- <script src="equipment.natural.data.js"></script> -->
   <script src="data/traits.data.js"></script>
+  <script src="onstart.js"></script>
   <script src="main.js"></script>
   <link rel="stylesheet" href="main.css"></link>
 </head>
@@ -30,7 +31,7 @@
 
 
 <script type="text/x-template" id="equipmentTemplate">
-    <div class="equipment"
+    <div class="equipment <% if (is_dup) { %>equipment-dup<% } %> <% if (is_main) { %>equipment-main<% } %>"
         title="<%- _.join(_.map(aliases, (origin, name) => name + ( origin ? ` (${origin})` : '' )), '\n') %>"
         data-equipment="<%- id %>"
         data-traits="<%- _.join(_.map(all_traits, (val, key) => key), ' ')%>"

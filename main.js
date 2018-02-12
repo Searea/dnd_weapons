@@ -25,9 +25,9 @@ function highlight(data) {
 
 
     if (data.hide) {
-
+        $elems.hide();
     } else if (data.show) {
-
+        $elems.show();
     }
 
     // Highlight
@@ -60,15 +60,6 @@ function hideConnections() {
 
 // Note: http://musclesoft.github.io/jquery-connections/
 //       https://github.com/musclesoft/jquery-connections/wiki/API
-
-
-onstart = function() {
-    highlight({colour: '90ee90', trait: 'bludgeoning'});
-    highlight({colour: 'ffa07a', trait: 'piercing'});
-    highlight({colour: 'add8e6', trait: 'slashing'});
-}
-
-
 function expandColour(colour) {
     if (!colour) {
         colour = 'FF0';
@@ -143,6 +134,16 @@ function findBy(data) {
     }
     if (data.trait_group) {
         $all = $all.filter(`[data-trait-groups*="${data.trait_group}"]`);
+    }
+    if (data.is_main === true) {
+        $all = $all.filter(`.equipment-main`);
+    } else if (data.is_main === false) {
+        $all = $all.not(`.equipment-main`);
+    }
+    if (data.is_dup === true) {
+        $all = $all.filter(`.equipment-dup`);
+    } else if (data.is_dup === false) {
+        $all = $all.not(`.equipment-dup`);
     }
 
     //--------------------
@@ -315,25 +316,17 @@ function init() {
 
     // Second Pass: actually create the data
     EQUIPMENT.map((equipment) => {
-        if (!hidden_items[equipment.id] && only_show) {
-            return;
-        } else if (hidden_items[equipment.id] && only_show) {
-            delete hidden_items[equipment.id];
-        } else if (hidden_items[equipment.id]) {
-            delete hidden_items[equipment.id];
-            return;
+        var is_main = false;
+        if (main_weapons[equipment.id]) {
+            // Count which weapons we've already checked off (for errors)
+            delete main_weapons[equipment.id];
+            is_main = true;
         }
 
         var is_dup = false;
 
         // Setup the Equipment in each category
         equipment.categories.map((category) => {
-            if (is_dup) {
-                // return;
-            } else {
-                is_dup = true;
-            }
-
             var keys  = _.split(category, '-');
 
             name = equipment['name'];
@@ -348,6 +341,8 @@ function init() {
                 category,
                 equipment,
                 name,
+                is_dup,
+                is_main,
             });
 
             equipment.outputs[category] = $source;
@@ -373,12 +368,17 @@ function init() {
                     to_id: upgrade,
                 });
             });
+
+            // Mark the next copy of the weapon as a duplicate
+            if (!is_dup) {
+                is_dup = true;
+            }
         });
     });
 
     // Ensure all hidden items were removed
-    if (Object.keys(hidden_items).length) {
-        throw 'Hidden Items Left: ' + Object.keys(hidden_items);
+    if (Object.keys(main_weapons).length) {
+        throw 'Main Items Left: ' + Object.keys(main_weapons);
     }
 
 
@@ -471,6 +471,8 @@ function createEquipment(data) {
         subcategory: sub_key,
         difficulty: group_key,
         visible_name: data.name,
+        is_dup: data.is_dup,
+        is_main: data.is_main,
     }, base_equipment)));
 
     $elem.on('click', function onClick(event) {

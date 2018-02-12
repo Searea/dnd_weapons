@@ -196,8 +196,7 @@ const CATEGORIES = [
 
 
 
-only_show = false;
-_hidden_items = [
+_main_weapons = [
     // 1d4
     'dagger',
 
@@ -226,11 +225,7 @@ _hidden_items = [
     'steel_fan',     'war_fan',
                      /*'shortstaff'*/, 'quarterstaff',
 ];
-hidden_items = _hidden_items.reduce((map, obj) => {
+main_weapons = _main_weapons.reduce((map, obj) => {
     map[obj] = true;
     return map;
 }, {});
-
-hidden_items = false
-// only_show = true
-
