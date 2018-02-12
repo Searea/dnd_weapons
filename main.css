@@ -1,0 +1,223 @@
+/*-------------------*
+    Dragging         */
+
+.is-copying .is-moving {
+    border-style: dashed;
+}
+body:not(.is-copying) .is-moving {
+    display: none;
+}
+.equipment {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px 10px 5px 10px;;
+    margin: 2px 8px;
+    text-align: center;
+
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+
+    background: white;
+
+    max-width: 137px;
+}
+.equipment[data-traits*="strange"] {
+    opacity :.25;
+}
+
+.magnet {
+    position: absolute;
+
+    color: grey;
+    font-size: 10px;
+}
+.magnet:not(.target) {
+    display: none;
+}
+.left-magnet-1 {
+    left: -4px;
+    top: -6px;
+}
+.left-magnet-2 {
+    left: -6px;
+    top: 3px;
+}
+.left-magnet-3 {
+    left: -4px;
+    top: 12px;
+}
+
+.right-magnet-1 {
+    right: -4px;
+    top: -6px;
+}
+.right-magnet-2 {
+    right: -6px;
+    top: 3px;
+}
+.right-magnet-3 {
+    right: -4px;
+    top: 12px;
+}
+
+.relation {
+    border-color: lightgrey;
+    border-style: solid;
+
+    border-radius: 20%;
+    z-index: -10;
+}
+
+.left-magnet-1.target::after {
+    content: "\25b6";
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    color: lightgrey;
+}
+/*.left-magnet-2.target::after {
+    content: "\25b6";
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    color: grey;
+}
+.left-magnet-3.target::after {
+    content: "\25b6";
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    color: grey;
+}
+*/
+.hideConnections .magnet {
+    display: none;
+}
+
+
+.info.hide {
+    display: none;
+}
+.info:not(.expand) .more-info {
+    display: none;
+}
+.info {
+    font-size: smaller;
+    color: grey;
+}
+.marks {
+    position: absolute;
+    bottom: -11px;
+
+    font-size: 20px;
+    text-align: center;
+    width: calc(100% - 20px);
+}
+.mark-duplicate {
+    color: cadetblue;
+    font-size: 7px;
+    background: white;
+    border-radius: 100%;
+    border: 1px solid cadetblue;
+    padding: 0px 2px;
+    position: absolute;
+    bottom: -5px;
+    right: -4px;
+}
+
+
+/*-------------------*
+    Categories       */
+body {
+    width: 2000px;
+}
+.category {
+    border: 1px solid black;
+    padding: 4px;
+    width: 905px;
+    display: inline-block;
+    vertical-align: top;
+
+    position: relative;
+    margin-left: 40px;
+}
+.title {
+    color: black;
+    font-style: italic;
+    text-transform: capitalize;
+    padding: 20px 0px 0px 2px;
+    box-sizing: border-box;
+    font-size: 25px;
+
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 0px;
+    left: -35px;
+
+    height: 100%;
+    border-left: 1px dashed grey;
+    border-bottom: 1px dashed lightgrey;
+    border-top: 1px dashed lightgrey;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.subcategory {
+    margin: 1px;
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+.subcategory + .subcategory {
+    border-top: 1px dashed black;
+}
+.subcat-spears {
+    height: 200px;
+}
+.subcategory-isolated .subtitle {
+    color: salmon;
+    font-weight: bolder;
+}
+.subtitle {
+    color: grey;
+    font-style: italic;
+    text-transform: capitalize;
+    padding: 4px 5px;
+
+    writing-mode: vertical-rl;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.groups {
+    display: inline-block;
+    width: 100%;
+}
+.subtitle + .groups {
+    display: inline-block;
+    width: calc(100% - 32px);
+}
+.subtitle + .groups .group.basic {
+    width: 160px;
+    border-left: 1px dashed black;
+}
+.group.basic {
+    border-left: 0;
+    width: calc(160px + 32px);
+}
+.group.martial {
+    width: 350px;
+}
+.group.exotic {
+    width: 350px;
+}
+
+.group {
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    border-left: 1px dashed black;
+}

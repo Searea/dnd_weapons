@@ -1,0 +1,108 @@
+<html>
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <script src="jquery.connections.js"></script>
+  <script type="text/javascript">
+    var EQUIPMENT = [];
+  </script>
+  <script src="data/categories.data.js"></script>
+  <script src="data/equipment.swords.data.js"></script>
+  <script src="data/equipment.polearms.data.js"></script>
+  <script src="data/equipment.bows.data.js"></script>
+  <script src="data/equipment.club.data.js"></script>
+  <script src="data/equipment.close.data.js"></script>
+  <script src="data/equipment.whip.data.js"></script>
+  <script src="data/equipment.chain.data.js"></script>
+  <script src="data/equipment.axes.data.js"></script>
+  <script src="data/equipment.thrown.data.js"></script>
+  <!-- <script src="equipment.natural.data.js"></script> -->
+  <script src="data/traits.data.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="main.css"></link>
+</head>
+<body>
+</body>
+</html>
+
+
+
+<script type="text/x-template" id="equipmentTemplate">
+    <div class="equipment"
+        title="<%- _.join(_.map(aliases, (origin, name) => name + ( origin ? ` (${origin})` : '' )), '\n') %>"
+        data-equipment="<%- id %>"
+        data-traits="<%- _.join(_.map(all_traits, (val, key) => key), ' ')%>"
+        data-trait-groups="<%- _.join(_.map(trait_groups, (val, key) => key), ' ')%>"
+        data-parent-category="<%- category %>"
+        data-parent-subcategory="<%- subcategory %>"
+        data-parent-difficulty="<%- difficulty %>"
+    >
+      <div class="magnet-left">
+        <div class="magnet left-magnet-1">◉</div>
+        <div class="magnet left-magnet-2">◉</div>
+        <div class="magnet left-magnet-3">◉</div>
+      </div>
+      <div class="magnet-right">
+        <div class="magnet right-magnet-1">◉</div>
+        <div class="magnet right-magnet-2">◉</div>
+        <div class="magnet right-magnet-3">◉</div>
+      </div>
+
+      <span class="name">
+        <%- visible_name %>
+      </span>
+      <div class="marks">
+        <% _.each(trait_groups, (colour, group) => { %>
+          <% if (colour) { %>
+            <span style="color: <%- colour %>;">●</span>
+          <% } %>
+        <% }); %>
+      </div>
+      <% if (hasDups) { %>
+        <span class="mark-duplicate">★</span>
+      <% } %>
+
+      <div class="info">
+        <% _.map(traits, (trait_value, trait_id) => { %>
+          <span class="trait">
+            <%- trait_id %><%- trait_value === true ? '' : `:${trait_value}` %>
+          </span>
+        <% }); %>
+
+        <div class="more-info">
+          Damage<%- all_traits.multi_dmg ? '&' : ':' %>
+            <% if (all_traits.slashing) { %><span title="Slashing">🗡</span><% } %>
+            <% if (all_traits.piercing) { %><span title="Piercing">🔱</span><% } %>
+            <% if (all_traits.bludgeoning) { %><span title="Bludgeoning">🔨</span><% } %>
+            <% if (all_traits.subdual) { %><span title="Subdual">§</span><% } %>
+          <br />
+          <% _.map(more_traits, (trait_value, trait_id) => { %>
+            <%- trait_id %>: <%- trait_value %>
+            <br />
+          <% }); %>
+        </div>
+      </div>
+    </div>
+</script>
+
+
+<script type="text/x-template" id="categoryTemplate">
+    <div class="category cat-<%- id %>">
+      <div class="title"><%- title %></div>
+
+      <% _.map(subcategories, (subcat) => { %>
+        <div class="subcategory subcat-<%- subcat.subid %> <% if (subcat.isolated) { %>subcategory-isolated<% } %>">
+          <% if (subcat.subtitle) { %>
+            <div class="subtitle"><%- subcat.subtitle %></div>
+          <% } %>
+          <div class="groups">
+            <div class="group basic" data-category="<%- id %>-<%- subcat.subid %>-basic"></div>
+            <div class="group martial" data-category="<%- id %>-<%- subcat.subid %>-martial"></div>
+            <div class="group exotic" data-category="<%- id %>-<%- subcat.subid %>-exotic"></div>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+</script>
