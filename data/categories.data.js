@@ -200,17 +200,8 @@ _main_weapons = [
     // 1d4
     'dagger',
 
-    // crit range: 19-20, 18-20
-    // crit Mult:  x3, x4
-    // Damage Dice ++
-    // Specific Ability (AP X, AP Shield X)
-    // Crit Ability (Crit Maneuver X)
-        // Maybe also a bonus on the crit?
-        // If Maneuver isn't opposed, allow nat 20?
-    // General Ability (Maneuver X)
-
-
-    // Note: Great Club & Greatsword are the only non-exotic ones...
+    // Note: Great Club is the only non-exotic great weapon...
+    // Note: quarterstaff is the only non-exotic double weapon...
 
     // 1d6           // 1d8, 1d0  // 2d4 << 1d12, 2d6, brutal 1d12
     'shortsword',    'longsword', 'greatsword',
@@ -223,7 +214,7 @@ _main_weapons = [
 
                      'club', 'greatclub',
     'steel_fan',     'war_fan',
-                     /*'shortstaff'*/, 'quarterstaff',
+                     'quarterstaff',
 ];
 main_weapons = _main_weapons.reduce((map, obj) => {
     map[obj] = true;

@@ -9,6 +9,7 @@ EQUIPMENT = EQUIPMENT.concat([
         ammo: 'stones',
     },
     more_traits: {
+        thrown: true, // This is "thrown" even though it uses ammo, as you get to add strength to damage
     },
     damages: {
         bludgeoning: true,
@@ -28,6 +29,7 @@ EQUIPMENT = EQUIPMENT.concat([
         ammo: 'stones',
     },
     more_traits: {
+        thrown: true, // This is "thrown" even though it uses ammo, as you get to add strength to damage
     },
     damages: {
         bludgeoning: true,

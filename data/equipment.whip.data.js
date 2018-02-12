@@ -85,7 +85,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'chains-whips-exotic',
     ],
     traits: {
-        ap: 'shield',
+        ap_shield: 2,
         reach: "0-10'",
         finesse: true,
     },
