@@ -1,3 +1,32 @@
+
+// API helpdocs duplicated here
+/**
+ * highlight({ ... });
+ *
+ * # Effects:
+ * options.reset    Tries to clear colours and show things
+ * options.clear    Clears colours
+ * options.show     Shows things
+ * options.hide     Hides things
+ * options.colour   Sets the color (3 digit hex, 4 digit hex with alpha, or 6-8 digit hex codes) no need for the #
+                    e.g. colour: '335', 'FF4', '99F8', 'FEFE90'
+ *
+ * Selectors:
+ * options.trait:   a specific trait it must have (only one at a time right now, no AND/OR)
+ * options.trait_group:   a specific trait group (See traits.data.js). These are usually represented by a small coloured dot as well
+ *
+ * options.is_main     Whether this is one of the main weapons
+ * options.is_strange  Whether this is one of the strange weapons
+ * options.is_dup      Selects all the second copies of a duplicate weapon (true: selects all copies, false: selects all primaries)
+ *
+ * options.category     First category key
+ * options.subcategory  Second Category key
+ * options.difficulty   Final Categoru Key (martial, basic, exotic)
+ *
+ * options.filter       Runs a custom filter function on the equipment data
+ *
+ */
+
 onstart = function() {
     highlight({colour: '90ee90', trait: 'bludgeoning'});
     highlight({colour: 'ffa07a', trait: 'piercing'});
@@ -8,7 +37,8 @@ onstart = function() {
     // highlight({
     //     hide: true,
     //     is_main: false,
-    // }); hideConnections();
+    // });
+    hideConnections();
 }
 
 
