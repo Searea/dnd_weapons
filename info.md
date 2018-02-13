@@ -330,6 +330,7 @@ Sickles:
     Slashing
     Wounding
     AP (Unarmoured)
+    Finesse
 
 Flails:
     Bludgeoning

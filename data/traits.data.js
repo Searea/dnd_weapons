@@ -50,7 +50,7 @@ ap: {
     traits: [
     'ap',
     'ap_shield',
-    'ap_unarmoured',
+    'ap_flesh',
     ],
 },
 type: {

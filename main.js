@@ -61,6 +61,11 @@ function highlight(data) {
     return $elems;
 }
 
+// Jquery Plugin
+$.fn.highlight = function(data) {
+    return highlight($(this));
+};
+
 function clear() {
     highlight({clear: true})
 }
@@ -164,10 +169,10 @@ function findBy(data) {
     //---------------------------
     // Traits
     if (data.trait) {
-        $all = $all.filter(`[data-traits*="${data.trait}"]`);
+        $all = $all.filter(`[data-traits*=" ${data.trait} "]`);
     }
     if (data.trait_group) {
-        $all = $all.filter(`[data-trait-groups*="${data.trait_group}"]`);
+        $all = $all.filter(`[data-trait-groups*=" ${data.trait_group} "]`);
     }
     if (data.is_main === true) {
         $all = $all.filter(`.equipment-main`);
