@@ -131,7 +131,7 @@ EQUIPMENT = EQUIPMENT.concat([
     id: 'heavy_pick',
     categories: [
         'axes-picks-martial',
-        'hammers--martial',
+        'hammers--exotic',
     ],
     visible_names: {
         'hammers': 'morning star',

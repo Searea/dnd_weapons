@@ -543,7 +543,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'axes-picks-exotic',
     ],
     traits: {
-        ap_shield: 3,
+        ap: 3,
         reach: "10'",
     },
     more_traits: {

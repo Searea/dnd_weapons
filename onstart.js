@@ -28,6 +28,7 @@
  */
 
 onstart = function() {
+    highlight({reset: true});
     highlight({colour: '90ee90', trait: 'bludgeoning'});
     highlight({colour: 'ffa07a', trait: 'piercing'});
     highlight({colour: 'add8e6', trait: 'slashing'});

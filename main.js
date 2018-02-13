@@ -27,8 +27,8 @@
  * options.filter       Runs a custom filter function on the equipment data
  *
  */
-function highlight(data) {
-    var $elems = findBy(data)
+function highlight(data, $elems) {
+    var $elems = findBy(data, $elems)
 
     if (data.reset) {
         data.clear = true;
@@ -63,7 +63,7 @@ function highlight(data) {
 
 // Jquery Plugin
 $.fn.highlight = function(data) {
-    return highlight($(this));
+    return highlight(data, $(this));
 };
 
 function clear() {
@@ -163,8 +163,13 @@ function clearColours($elem) {
     });
 }
 
-function findBy(data) {
-    var $all = $('.equipment');
+function findBy(data, $elems) {
+    var $all;
+    if ($elems) {
+        $all = $elems;
+    } else {
+        $all = $('.equipment');
+    }
 
     //---------------------------
     // Traits
