@@ -11,8 +11,9 @@ penalties: {
     'slow_recovery',
     'unbalancing',
     'fragile',
-    'heavy',
+    'heavy', // Simply means it weights a lot, so you can't carry much
     'long',
+    'improvised',
     ],
 },
 requirements: {
@@ -34,21 +35,24 @@ specialized: {
 },
 
 offensive: {
-    colour: 'orangered',
+    colour: 'orange',
     traits: [
     'brutal',
     'deadly',
     'hard_hitting',
     'wounding',
-    'improvised',
-    'ap',
-    'ap_shield',
-    'ap_unarmoured',
     // Ranges
     'powerful',
     ],
 },
-
+ap: {
+    colour: 'violet',
+    traits: [
+    'ap',
+    'ap_shield',
+    'ap_unarmoured',
+    ],
+},
 type: {
     colour: '',
     traits: [

@@ -37,6 +37,9 @@ function highlight(data) {
 
     if (data.clear) {
         // Clear all the colours
+        $elems.each((i, elem) => {
+            clearColours($(elem));
+        })
     }
 
     if (data.colour === true) {
@@ -54,11 +57,6 @@ function highlight(data) {
     } else if (data.show) {
         $elems.show();
     }
-
-    // Highlight
-    $elems.css({
-        background: data.colour,
-    });
 
     return $elems;
 }
@@ -82,6 +80,10 @@ function hideConnections() {
 
 
 //---------------------------------------------
+
+function intToDigitHex(string, digits) {
+    return parseInt(string, 10).toString(16).padStart(digits, "0");
+}
 
 // Note: http://musclesoft.github.io/jquery-connections/
 //       https://github.com/musclesoft/jquery-connections/wiki/API
@@ -107,7 +109,7 @@ function expandColour(colour) {
         }
 
         // Ignore the alpha
-        colour = parseInt(match[1], 10).toString(16) + parseInt(match[2], 10).toString(16) + parseInt(match[3], 10).toString(16);
+        colour = intToDigitHex(match[1], 2) + intToDigitHex(match[2], 2) + intToDigitHex(match[3], 2);
     }
 
     if (colour.length == 3) {
@@ -146,6 +148,13 @@ function addColour($elem, colour) {
     $elem.attr('data-colours', _.join(colours, ' '));
     $elem.css({
         background: gradient,
+    });
+}
+
+function clearColours($elem) {
+    $elem.attr('data-colours', '');
+    $elem.css({
+        background: '',
     });
 }
 
