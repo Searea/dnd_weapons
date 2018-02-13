@@ -68,7 +68,9 @@
       <div class="info">
         <% _.map(traits, (trait_value, trait_id) => { %>
           <span class="trait">
-            <%- trait_id %><%- trait_value === true ? '' : `:${trait_value}` %>
+            <span class="trait-name"><%- trait_id %></span><% if (trait_value !== true) { %>:
+              <span class="trait-info"><%- trait_value %></span>
+            <% } %>
           </span>
         <% }); %>
 

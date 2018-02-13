@@ -543,13 +543,13 @@ EQUIPMENT = EQUIPMENT.concat([
         'axes-picks-exotic',
     ],
     traits: {
+        ap_shield: 3,
         reach: "10'",
     },
     more_traits: {
-        ap: 3,
     },
     damages: {
-        slashing: true,
+        piercing: true,
     },
     upgrades: [
     ],
@@ -565,7 +565,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'polearms--exotic',
     ],
     traits: {
-        'ap_shield': 4,
+        ap_shield: 3,
         reach: "10'",
     },
     more_traits: {

@@ -164,9 +164,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'blades--martial',
     ],
     traits: {
-        finesse: true,
     },
     more_traits: {
+        finesse: true,
     },
     damages: {
         piercing: true,
@@ -325,6 +325,8 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         light: true,
+    },
+    more_traits: {
         finesse: true,
     },
     upgrades: [
@@ -351,8 +353,10 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         light: true,
-        finesse: true,
         disarm: 4,
+    },
+    more_traits: {
+        finesse: true,
     },
     upgrades: [
     ],
@@ -372,6 +376,8 @@ EQUIPMENT = EQUIPMENT.concat([
         'druid-allowed-martial',
     ],
     traits: {
+    },
+    more_traits: {
         finesse: true,
     },
     upgrades: [
@@ -412,6 +418,8 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         // Sickles have a lower damage, but higher crit?
         '2H': true,
+    },
+    more_traits: {
         finesse: true,
     },
     upgrades: [
@@ -437,7 +445,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'druid-allowed-exotic',
     ],
     traits: {
-        ap: 'shield 2',
+        ap_shield: 2,
+    },
+    more_traits: {
         finesse: true,
     },
     upgrades: [

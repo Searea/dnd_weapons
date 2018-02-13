@@ -8,9 +8,9 @@ EQUIPMENT = EQUIPMENT.concat([
         trip: true,
         disarm: true,
         reach: "0-15'",
-        finesse: true,
     },
     more_traits: {
+        finesse: true,
         unthreatening: true,
         '1H': true,
     },
@@ -36,10 +36,10 @@ EQUIPMENT = EQUIPMENT.concat([
         trip: true,
         distracting: true,
         reach: "0-15'",
-        finesse: true,
         '2H': true,
     },
     more_traits: {
+        finesse: true,
         unthreatening: true,
     },
     damages: {
@@ -63,9 +63,9 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         '2H': true,
         reach: "0-10'",
-        finesse: true,
     },
     more_traits: {
+        finesse: true,
     },
     damages: {
         slashing: true,
@@ -87,9 +87,9 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         ap_shield: 2,
         reach: "0-10'",
-        finesse: true,
     },
     more_traits: {
+        finesse: true,
         '2H': true,
     },
     damages: {
@@ -110,9 +110,9 @@ EQUIPMENT = EQUIPMENT.concat([
         trip: true,
         disarm: true,
         reach: "5-20'",
-        finesse: true,
     },
     more_traits: {
+        finesse: true,
         unthreatening: true,
     },
     damages: {
@@ -131,10 +131,10 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         reach: "0-10'",
-        finesse: true,
         limb: 'hair',
     },
     more_traits: {
+        finesse: true,
         unthreatening: true,
         strange: true,
     },

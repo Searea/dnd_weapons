@@ -106,6 +106,9 @@ body:not(.is-copying) .is-moving {
     font-size: smaller;
     color: grey;
 }
+.trait-name {
+    color: darkred;
+}
 .marks {
     position: absolute;
     bottom: -19px;
