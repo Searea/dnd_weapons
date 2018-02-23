@@ -20,6 +20,14 @@ Masterwork Weapon upgrades
     https://dnd-wiki.org/wiki/Masterwork_Variant_(3.5e_Variant_Rule)
     https://dnd-wiki.org/wiki/Improved_Masterwork_(3.5e_Feat)
 
+Crits change:
+
+ * No need to confirm (Design: confirming always removed the excitement of a crit)
+ * Basic crit now maximizes your weapon dice
+    * Improved Crit == x2, x3 (rare)... which would maximize the base damage dice, and add more
+    * Crit range is also stronger, so 20+, 19+, or 18+ (rare)
+ * Exception: Vorpral, you still confirm (So its not a super-common effect)
+
 
 ### TODO
 
@@ -426,3 +434,25 @@ Accessibility:
 
 
 
+
+
+
+
+
+## Extra Info
+
+http://jackalmage.pbworks.com/w/page/6552473/WeaponConstruction
+
+Notes:
+ * Things that give you choice only matter if they're a valuable choice for 1 character
+    e.g. Finesseable only makes the weapon a good choice for more characters... one PC would choice the best ability and stick with it (thus it isn't stronger)
+     BUT Multiple damage types allow a single PC to bypass more DR, and mixed DR (Slashing & Bludgeoning) is super rare, so shouldn't be considered
+
+Additions:
+
+Damage Type:
+ + 0.25  Can use multiple Damage types (AT ONCE)
+ + 0.25  Can use multiple Damage types (by choice)
+
+Weapon Type:
+ + 0.25  Finesse, Finesseable

@@ -70,6 +70,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'Brass Knuckles': '',
         'Knuckleduster': '',
         'Tekko': 'Japan',
+        'Nekode (Cat Claws)': 'Japan',
         'Bagh Nakh (Tiger Claw)': 'Indian',
         'Katar': 'Indian',
         'Tribladed Katar': 'Indian',

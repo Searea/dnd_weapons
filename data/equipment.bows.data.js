@@ -133,7 +133,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         ability: true,
-        skilled_climb: 2,
+        skilled_rope: true,
     },
     more_traits: {
     },

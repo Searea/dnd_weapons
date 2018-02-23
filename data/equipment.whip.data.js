@@ -155,7 +155,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         ability: true,
-        skilled_climb: 2,
+        skilled_rope: 2,
     },
     more_traits: {
         strange: true,
@@ -173,10 +173,10 @@ EQUIPMENT = EQUIPMENT.concat([
         'chains-whips-martial',
     ],
     traits: {
-        climb: 1,
+        rope: true,
         // skilled_climb also grants to Hit bonuses e.g. when thrown one
         // (For all such items)
-        skilled_climb: 2,
+        skilled_rope: 2,
         weak_dmg: true,
     },
     more_traits: {
