@@ -24,6 +24,7 @@ Axes: Breaching (Wood)
 */
 EQUIPMENT = EQUIPMENT.concat([
 {
+    // Suggestion: Maybe seperate handaxe and throwing axe so that axes/picks have a basic weapon
     id: 'handaxe',
     categories: [
         'axes-axes-martial',
@@ -32,7 +33,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         'light': true,
-        throwning: true,
+        thrown: true,
     },
     more_traits: {
         twin: true,
@@ -59,6 +60,14 @@ EQUIPMENT = EQUIPMENT.concat([
         'Adze': 'Improvised',
         'Mattock': 'Improvised',
     },
+    stats: {
+        // Handaxe (basic)
+        // Score: 1 (1 damage)
+        // Throwing Axe
+        // Score: 3 (1 damage, 1 light, 1 thrown)
+        damage: '2d4'
+        crit: ''
+    },
 },
 {
     id: 'heavy_axe',
@@ -81,6 +90,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Tabarzin': 'Persian',
         'Bhuj': 'Indian', // Has a Gandasa in the handle
     },
+    stats: {
+        // Score: 3 (3 damage)
+        damage: '2d6',
+        crit: ''
+    },
 },
 {
     id: 'greataxe',
@@ -99,6 +113,11 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
     },
+    stats: {
+        // Score: 5 (5 damage, 1 crit, -1 twohanded)
+        damage: '2d8',
+        crit: 'x2'
+    },
 },
 
 // Gandasa (Axe) often comes with Bhuj (Stiletto)
@@ -113,7 +132,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         light: true,
-        throwning: true,
+        thrown: true,
         'ap': 2,
     },
     more_traits: {
@@ -125,6 +144,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'heavy_pick',
     ],
     aliases: {
+    },
+    stats: {
+        // Score: 3 (1 light, 1 ap, 1 thrown)
+        damage: '1d6',
+        crit: ''
     },
 },
 {
@@ -154,6 +178,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Maul': '',
         'Battlepick': 'Gnome',
     },
+    stats: {
+        // Score: 3 (1 damage, 2 ap)
+        damage: '2d4',
+        crit: ''
+    },
 },
 {
     id: 'greatpick',
@@ -173,11 +202,17 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
     },
+    stats: {
+        // Score: 5 (3 damage, 3 ap, -1 twohanded)
+        damage: '2d6',
+        crit: ''
+    },
 },
 
 //---------------------------------------------------------
 // Special
 {
+    // Suggestion: Make this light?
     id: 'ice_axe',
     categories: [
         'axes-axes-exotic',
@@ -195,6 +230,12 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
         'Boarding Axe': 'Naval',
+    },
+    stats: {
+        // Score: 5 (1 damage, 1 light, 1 climb, 2 special)
+        damage: '2d4',
+        crit: ''
+        special: 'improved grab'
     },
 },
 {
@@ -215,6 +256,11 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
         'Buckler Axe': 'Dwarven',
+    },
+    stats: {
+        // Score: 5 (3 damage, 2 shield)
+        damage: '2d6',
+        crit: ''
     },
 },
 {
@@ -237,8 +283,15 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Double Axehead': 'Orc',
     },
+    stats: {
+        // Score: 5 (3 damage, 2 double, -1 twohanded, 1 special)
+        damage: '2d6',
+        crit: '',
+        special: 'critical hits allow you to roll 1 additional attack with the other side of the weapon'
+    },
 },
 {
+    // Suggestion: Increase the AP to further differentiate it from a light pick?
     id: 'kpinga',
     categories: [
         'axes-axes-exotic',
@@ -261,6 +314,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Kpinga': 'African (Zande)',
         'Hunga Munga': 'African',
         'Mambele': 'African (Mangbetu)',
+    },
+    stats: {
+        // Score: 5 (1 damage, 1 light, 1 thrown, 2 ap)
+        damage: '2d4',
+        crit: ''
     },
 },
 
