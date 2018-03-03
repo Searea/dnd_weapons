@@ -22,6 +22,15 @@ Picks: Breaching (Stone)
 Axes: Breaching (Wood)
 
 */
+
+// TODO:: Adjust axes with a malus to hit to match with sword's score
+
+/*
+Axe bias:
+- High damage
+- Average dice
+- Less hit (?)
+*/
 EQUIPMENT = EQUIPMENT.concat([
 {
     // Suggestion: Maybe seperate handaxe and throwing axe so that axes/picks have a basic weapon
@@ -61,8 +70,6 @@ EQUIPMENT = EQUIPMENT.concat([
         'Mattock': 'Improvised',
     },
     stats: {
-        // Handaxe (basic)
-        // Score: 1 (1 damage)
         // Throwing Axe
         // Score: 3 (1 damage, 1 light, 1 thrown)
         damage: '2d4'
