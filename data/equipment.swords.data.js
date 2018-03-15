@@ -286,6 +286,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'mod': 'crossbows, thruster, prodd',
     },
     more_traits: {
+        light: true,
     },
     damages: {
         piercing: true,
@@ -295,8 +296,8 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
     },
     stats: {
-        // Score: 1 (1 attachment)
-        damage: '1d6',
+        // Score: 1 (1 attachment, 1 light, -1 damage)
+        damage: '1d4',
         crit: ''
     },
 },
