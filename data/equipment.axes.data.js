@@ -72,8 +72,8 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Throwing Axe
         // Score: 3 (1 damage, 1 light, 1 thrown)
-        damage: '2d4'
-        crit: ''
+        damage: '2d4',
+        crit: '',
     },
 },
 {
@@ -242,8 +242,8 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 5 (1 damage, 1 light, 1 climb, 2 special)
         damage: '2d4',
-        crit: ''
-        special: 'improved grab'
+        crit: '',
+        special: 'improved grab',
     },
 },
 {
