@@ -1,3 +1,7 @@
+/*
+Sword bias:
+- crit range
+*/
 EQUIPMENT = EQUIPMENT.concat([
 {
     id: 'dagger',
@@ -47,6 +51,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Phurba': 'Buddhist', // Foci
         'Kīla': 'Buddhist', // Foci
     },
+    stats: {
+        // Score: 1 (1 thrown, 1 light, -1 damage)
+        damage: '1d4',
+        crit: ''
+    },
 },
 {
     id: 'dagger_hidden',
@@ -76,8 +85,14 @@ EQUIPMENT = EQUIPMENT.concat([
         'Butterfly Knife': '',
         'Fan Knife': '',
     },
+    stats: {
+        // Score: 1 (1 thrown, 1 light, -1 damage)
+        damage: '1d4',
+        crit: ''
+    },
 },
 {
+    // Suggestion: Make light
     id: 'shortsword',
     categories: [
         'blades--martial',
@@ -101,6 +116,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Xiphos': 'Greek',
         'Cinquedea': 'Italy',
         'Dogslicer': 'Goblin',
+    },
+    stats: {
+        // Score: 2 (1 light, 1 crit range)
+        damage: '1d6',
+        crit: '19+'
     },
 },
 {
@@ -130,6 +150,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Ida': 'African',
         'Longblade': 'Elf',
     },
+    stats: {
+        // Score: 2 (1 damage, 1 crit range)
+        damage: '1d8',
+        crit: '19+'
+    },
 },
 {
     id: 'greatsword',
@@ -157,6 +182,12 @@ EQUIPMENT = EQUIPMENT.concat([
         'Changdao': 'China',
         'Temple Sword': '',
     },
+    stats: {
+        // Score: 4 (3 damage, 1 crit range, -1 two handed, 1 special)
+        damage: '2d6',
+        crit: '19+',
+        special: 'cleave on crit'
+    },
 },
 {
     id: 'rapier',
@@ -181,11 +212,17 @@ EQUIPMENT = EQUIPMENT.concat([
         'Thinblade': 'Elf',
         'Cane Sword': 'Hidden',
     },
+    stats: {
+        // Score: 2 (2 crit range)
+        damage: '1d6',
+        crit: '18+'
+    },
 },
 
 //-----------------------------------
 // Special
 {
+    // Suggestion: Is there a reason this is a special weapon instead of just a short sword?
     id: 'twin_blades',
     categories: [
         'blades--exotic',
@@ -205,6 +242,12 @@ EQUIPMENT = EQUIPMENT.concat([
         'Butterfly Sword': 'China',
         'Dragonsplit': '',
         'Deer Horn Knife': 'China',
+    },
+    stats: {
+        // Score: 4 (1 crit range, 2 double, 1 special)
+        damage: '1d6',
+        crit: '19+',
+        special: 'When wielding a pair of twin-blades, can attack with both using a standard attack'
     },
 },
 {
@@ -226,6 +269,12 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Cicada Wing Sword': 'China',
         'Chan Zi dao': 'China',
+    }, 
+    stats: {
+        // Score: 4 (1 crit range, 2 double, 1 special)
+        damage: '1d6',
+        crit: '19+',
+        special: 'critical hits allow you to roll 1 additional attack with the other side of the weapon'
     },
 },
 {
@@ -244,6 +293,11 @@ EQUIPMENT = EQUIPMENT.concat([
     upgrades: [
     ],
     aliases: {
+    }, 
+    stats: {
+        // Score: 1 (1 attachment)
+        damage: '1d6',
+        crit: ''
     },
 },
 {
@@ -268,6 +322,12 @@ EQUIPMENT = EQUIPMENT.concat([
         'Main Gauche': '',
         'Broadblade Shortsword': '',
     },
+    stats: {
+        // Score: 4 (-1 damage, 1 light, 1 thrown, 2 special, 1 defend)
+        damage: '1d4',
+        crit: '',
+        special: 'improved disarm'
+    },
 },
 {
     id: 'sword_breaker',
@@ -287,6 +347,12 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
         'Sword Catcher': 'Gnome',
+    }, 
+    stats: {
+        // Score: 3 (-1 damage, 2 special, 2 special)
+        damage: '1d6',
+        crit: '19+',
+        specia: 'improved disarm, improved sunder'
     },
 },
 
@@ -313,7 +379,13 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Karambit': 'Indonesia',
     },
+    stats: {
+        // Score: 1 (1 light, -1 damage, 1 crit range)
+        damage: '1d4',
+        crit: '19+'
+    },
 },
+
 //-----------------------------------------
 // Sickles
 {
@@ -344,6 +416,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Kujang': 'Indonesia',
         'Boline': 'Wiccan', // Foci?
     },
+    stats: {
+        // Score: 2 (-1 damage, 1 light, 1 crit range and crit)
+        damage: '1d4',
+        crit: '19+ x2'
+    },
 },
 {
     id: 'raptor_sickle',
@@ -367,6 +444,12 @@ EQUIPMENT = EQUIPMENT.concat([
         'Chicken Saber': 'China',
         'Raptor Saber': 'China',
         'Raptor Sickle': 'China',
+    },
+    stats: {
+        // Score: 4 (1 damage, 1 light, 1 disarm, 1 crit range)
+        damage: '1d8',
+        crit: '19+',
+        special: 'critical hits allow you to roll 1 additional attack with the other side of the weapon'
     },
 },
 {
@@ -409,6 +492,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Sawtooth Saber': '',
         'Skallagrim': 'Modern Variant',
     },
+    stats: {
+        // Score: 2 (2 crit range, 2 double, 1 special)
+        damage: '1d6',
+        crit: '18+'
+    },
 },
 {
     id: 'great_scimitar',
@@ -437,6 +525,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Great Falchion': 'Fantasy',
         'Courtblade': 'Elf',
     },
+    stats: {
+        // Score: 4 (4 crit (range and multiplier), -1 twohanded, 1 damage)
+        damage: '1d8',
+        crit: '18+ x2'
+    },
 },
 {
     id: 'khopesh',
@@ -464,6 +557,12 @@ EQUIPMENT = EQUIPMENT.concat([
         'Hook Sword': 'China',
         'Tiger Hook': 'China',
         'Shuang you': 'China',
+    },
+    stats: {
+        // Score: 4 (1 damage, 1 ap, 1 crit range, 1 special)
+        damage: '1d8',
+        crit: '19+',
+        special: 'attempt to disarm on crit'
     },
 },
 ]);
