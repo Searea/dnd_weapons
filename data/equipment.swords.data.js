@@ -407,6 +407,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'Tanmogayi': 'African',
         'Lightblade': 'Elf',
         'Sawtooth Saber': '',
+        'Skallagrim': 'Modern Variant',
     },
 },
 {

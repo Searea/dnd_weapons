@@ -153,6 +153,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'Warhammer': '',
         'Maul': '',
         'Battlepick': 'Gnome',
+        'Kalinga Headhunter Axe': 'Filipino',
     },
 },
 {

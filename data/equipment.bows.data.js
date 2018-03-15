@@ -400,6 +400,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     more_traits: {
         sniping: true,
+        con_dmg: true, // Use constitution (akak lung capacity?)
     },
     damages: {
         piercing: true,
