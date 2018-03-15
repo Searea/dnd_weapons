@@ -269,7 +269,7 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Cicada Wing Sword': 'China',
         'Chan Zi dao': 'China',
-    }, 
+    },
     stats: {
         // Score: 4 (1 crit range, 2 double, 1 special)
         damage: '1d6',
@@ -293,7 +293,7 @@ EQUIPMENT = EQUIPMENT.concat([
     upgrades: [
     ],
     aliases: {
-    }, 
+    },
     stats: {
         // Score: 1 (1 attachment)
         damage: '1d6',
@@ -347,7 +347,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
         'Sword Catcher': 'Gnome',
-    }, 
+    },
     stats: {
         // Score: 3 (-1 damage, 2 special, 2 special)
         damage: '1d6',
