@@ -548,7 +548,7 @@ function createEquipment(data) {
     //     $source.removeClass('is-moving');
     //     }
     // });
-    var $category_group = $(`[data-category=${category}`);
+    var $category_group = $(`[data-category=${category}]`);
     if (!$category_group.length) {
         throw `Invalid Category (${category}) for equipment (${base_equipment.id})`;
     }
