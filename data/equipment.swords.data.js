@@ -149,6 +149,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'Takoba': 'Africa',
         'Ida': 'African',
         'Longblade': 'Elf',
+        'Maquahuitl': 'Aztec',
     },
     stats: {
         // Score: 2 (1 damage, 1 crit range)

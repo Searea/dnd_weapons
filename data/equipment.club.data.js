@@ -108,7 +108,6 @@ EQUIPMENT = EQUIPMENT.concat([
         'Tigerskull Club': '',
         'Giant Mallet': '',
         'Ōtsuchi': 'Japan',
-        'Maquahuitl': 'Aztec',
         'Terbutje': 'Aztec',
         'Suburito': 'Japan',
     },
