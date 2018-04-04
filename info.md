@@ -50,6 +50,37 @@ All Damage types have a Finesse option
 
 
 
+## Crit Properties
+
+1. Crits should either be more common (higher range) but have a weaker effect. Or should be more rare but be stronger
+2. Crits should be hard to optimized, there are few was to extend crit range
+    1. Keen Weapons (Rare)
+    2. Improved Crit (Weapon Category)
+
+
+Maneuver on Crit:
+
+ * Bull Rush
+ * Trip
+ * Shove / Reposition
+
+Special on Crit:
+
+ * Feint
+
+Damage Type on Crit
+
+ * Energy
+
+Condition (Energ Based?)
+
+ * Bleed
+ * Slowed
+
+Feat Usage (or +x if you already have it)
+
+ * Cleave
+
 
 ## Offensive Properties
 
