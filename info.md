@@ -334,6 +334,17 @@ Picks:
     x1.5 AP (Armour)
     Active: you can choose to instead ignore 2 points of ANY DR or 4 Hardness
 
+
+Hammers
+
+Clubs
+
+Close
+
+Fans
+
+Blades
+
 Sickles:
     Slashing
     Wounding
@@ -344,8 +355,26 @@ Flails:
     Bludgeoning
     AP (shield), +2 vs Cover
 
+Chains:
+
+Whips:
+
 Polearms:
     Reach
+
+Spears
+
+Staves
+
+Thrown Rocks
+
+Thrown Sharp
+
+Bows
+
+Blowguns
+
+Crossbows
 
 
 ## Unique____________
