@@ -195,6 +195,12 @@ function findBy(data, $elems) {
         $all = $all.not(`[data-traits*="strange"]`);
     }
 
+    //---------------------------
+    // Stats
+    if (data.damage) {
+        $all = $all.filter(`[data-damage*=" ${data.damage} "]`);
+    }
+
     //--------------------
     // Which weapon Groups
     if (data.category) {

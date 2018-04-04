@@ -73,7 +73,7 @@ EQUIPMENT = EQUIPMENT.concat([
         // Throwing Axe
         // Score: 3 (1 damage, 1 light, 1 thrown)
         damage: '2d4',
-        crit: '',
+        crit: 20,
     },
 },
 {
@@ -100,7 +100,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 3 (3 damage)
         damage: '2d6',
-        crit: ''
+        crit: 20
     },
 },
 {
@@ -155,7 +155,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 3 (1 light, 1 ap, 1 thrown)
         damage: '1d6',
-        crit: ''
+        crit: 20
     },
 },
 {
@@ -189,7 +189,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 3 (1 damage, 2 ap)
         damage: '2d4',
-        crit: ''
+        crit: 20
     },
 },
 {
@@ -213,7 +213,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 5 (3 damage, 3 ap, -1 twohanded)
         damage: '2d6',
-        crit: ''
+        crit: 20
     },
 },
 
@@ -242,7 +242,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 5 (1 damage, 1 light, 1 climb, 2 special)
         damage: '2d4',
-        crit: '',
+        crit: 20,
         special: 'improved grab',
     },
 },
@@ -268,7 +268,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 5 (3 damage, 2 shield)
         damage: '2d6',
-        crit: ''
+        crit: 20
     },
 },
 {
@@ -294,7 +294,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 5 (3 damage, 2 double, -1 twohanded, 1 special)
         damage: '2d6',
-        crit: '',
+        crit: 20,
         special: 'critical hits allow you to roll 1 additional attack with the other side of the weapon'
     },
 },
@@ -326,7 +326,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 5 (1 damage, 1 light, 1 thrown, 2 ap)
         damage: '2d4',
-        crit: ''
+        crit: 20
     },
 },
 

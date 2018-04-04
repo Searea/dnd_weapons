@@ -54,7 +54,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 1 (1 thrown, 1 light, -1 damage)
         damage: '1d4',
-        crit: ''
+        crit: 20
     },
 },
 {
@@ -88,7 +88,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 1 (1 thrown, 1 light, -1 damage)
         damage: '1d4',
-        crit: ''
+        crit: 20
     },
 },
 {
@@ -120,7 +120,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 2 (1 light, 1 crit range)
         damage: '1d6',
-        crit: '19+'
+        crit: 19
     },
 },
 {
@@ -154,7 +154,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 2 (1 damage, 1 crit range)
         damage: '1d8',
-        crit: '19+'
+        crit: 19
     },
 },
 {
@@ -186,7 +186,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 4 (3 damage, 1 crit range, -1 two handed, 1 special)
         damage: '2d6',
-        crit: '19+',
+        crit: 19,
         special: 'cleave on crit'
     },
 },
@@ -216,7 +216,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 2 (2 crit range)
         damage: '1d6',
-        crit: '18+'
+        crit: 18
     },
 },
 
@@ -247,7 +247,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 4 (1 crit range, 2 double, 1 special)
         damage: '1d6',
-        crit: '19+',
+        crit: 19,
         special: 'When wielding a pair of twin-blades, can attack with both using a standard attack'
     },
 },
@@ -274,7 +274,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 4 (1 crit range, 2 double, 1 special)
         damage: '1d6',
-        crit: '19+',
+        crit: 19,
         special: 'critical hits allow you to roll 1 additional attack with the other side of the weapon'
     },
 },
@@ -299,7 +299,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 1 (1 attachment, 1 light, -1 damage)
         damage: '1d4',
-        crit: ''
+        crit: 20
     },
 },
 {
@@ -327,7 +327,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 4 (-1 damage, 1 light, 1 thrown, 2 special, 1 defend)
         damage: '1d4',
-        crit: '',
+        crit: 20,
         special: 'improved disarm'
     },
 },
@@ -353,7 +353,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 3 (-1 damage, 2 special, 2 special)
         damage: '1d6',
-        crit: '19+',
+        crit: 19,
         specia: 'improved disarm, improved sunder'
     },
 },
@@ -384,7 +384,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 1 (1 light, -1 damage, 1 crit range)
         damage: '1d4',
-        crit: '19+'
+        crit: 19
     },
 },
 
@@ -421,7 +421,8 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 2 (-1 damage, 1 light, 1 crit range and crit)
         damage: '1d4',
-        crit: '19+ x2'
+        crit: 19,
+        crit_mult: 2,
     },
 },
 {
@@ -450,7 +451,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 4 (1 damage, 1 light, 1 disarm, 1 crit range)
         damage: '1d8',
-        crit: '19+',
+        crit: 19,
         special: 'critical hits allow you to roll 1 additional attack with the other side of the weapon'
     },
 },
@@ -497,7 +498,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 2 (2 crit range, 2 double, 1 special)
         damage: '1d6',
-        crit: '18+'
+        crit: 18
     },
 },
 {
@@ -530,7 +531,8 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 4 (4 crit (range and multiplier), -1 twohanded, 1 damage)
         damage: '1d8',
-        crit: '18+ x2'
+        crit: 18,
+        crit_mult: 2,
     },
 },
 {
@@ -563,7 +565,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 4 (1 damage, 1 ap, 1 crit range, 1 special)
         damage: '1d8',
-        crit: '19+',
+        crit: 19,
         special: 'attempt to disarm on crit'
     },
 },
