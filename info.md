@@ -331,6 +331,8 @@ Specialized Counters:
 
     vs Mount (Dismouting, vs Charge)
 
+    Durability reset daily?
+
 Non-Combat
     Sneak: (Hidden)
     Lantern (Light)
@@ -357,22 +359,29 @@ Spear:
 Axes:
     Slashing
     Breaching (x2 Dmg vs Objects?)
-    Sunder Shields (on crit: half damage can go to the shield?)
+    Sunder Shields (on crit: half damage can go to the shield?) (or half damage goes through shield)
     Brutal
+    Voidpinky
+    Higher damage on crit
 
 Picks:
     Piercing
     x1.5 AP (Armour)
     Active: you can choose to instead ignore 2 points of ANY DR or 4 Hardness
 
-
 Hammers
+    Basic Bullrush (heavy)
+    Knockback on crit (guaranteed 5ft + bullrush?)
 
 Clubs
+    TODO:: Move RAM from polearm to here and remove reach
+    RAM: Area on crit, bullrush, trip?
 
 Close
+    Limb
 
 Fans
+    Parry
 
 Blades
 
@@ -381,22 +390,31 @@ Sickles:
     Wounding
     AP (Unarmoured)
     Finesse
+    Cleave
 
 Flails:
     Bludgeoning
     AP (shield), +2 vs Cover
 
 Chains:
+    Reach
 
 Whips:
+    Long Reach
+    Indiana Jones
 
 Polearms:
     Reach
+    Various Misc Abilities
 
 Spears
-
+    Reach
+    Various Misc Abilities
+    
 Staves
-
+    Reach?
+    Various Misc Abilities
+    
 Thrown Rocks
 
 Thrown Sharp
