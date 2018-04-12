@@ -363,6 +363,7 @@ Axes:
     Brutal
     Voidpinky
     Higher damage on crit
+    Gouge: On crit, enter graple, if succeed, can deal damage
 
 Picks:
     Piercing
