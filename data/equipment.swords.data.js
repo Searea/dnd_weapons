@@ -349,6 +349,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
         'Sword Catcher': 'Gnome',
+        'Seven branched sword': 'China',
     },
     stats: {
         // Score: 3 (-1 damage, 2 special, 2 special)

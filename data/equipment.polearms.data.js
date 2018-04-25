@@ -114,6 +114,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         block: 'blades',
+        subdual: true,
         disarm: true,
     },
     more_traits: {
@@ -661,7 +662,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         reach: "10'",
-        battering: true,
+        battering: true, // crit bull rush, or bonus to bull rush
     },
     more_traits: {
     },

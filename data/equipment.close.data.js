@@ -90,7 +90,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         light: true,
-        block: 'light_thrown',
+        block: 'light_thrown, lightning',
     },
     more_traits: {
     },

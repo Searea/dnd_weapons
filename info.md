@@ -27,6 +27,14 @@ Crits change:
     * Improved Crit == x2, x3 (rare)... which would maximize the base damage dice, and add more
     * Crit range is also stronger, so 20+, 19+, or 18+ (rare)
  * Exception: Vorpral, you still confirm (So its not a super-common effect)
+ * Warning! Coup-de grace: usually does automatical critical damage
+    * Scythe is usually a great combo with "Hold Person"
+ * https://www.d20pfsrd.com/feats/combat-feats/critical-feats
+ * Maybe remove crit range completely?
+    * Only Keen would increase crit range?
+    * Improved Crit lets you apply both the damage increase and the bonus action?
+    * If there is no bonus action, (but the weapon category normally has one) you can choose to apply it now
+    * IF there is no bonus action, and the weapon category doesn't have one... increase damage dice?
 
 
 ### TODO
@@ -49,7 +57,6 @@ All Exotic categories offer a decent choice
 All Damage types have a Finesse option
 
 
-
 ## Crit Properties
 
 1. Crits should either be more common (higher range) but have a weaker effect. Or should be more rare but be stronger
@@ -63,6 +70,8 @@ Maneuver on Crit:
  * Bull Rush
  * Trip
  * Shove / Reposition
+ * Sunder
+    * (Shield) Lance?
 
 Special on Crit:
 
@@ -304,6 +313,25 @@ Defensive (X): When you use this weapon to fight defensively, you gain a +X (Def
 
 Deflect: Techniques this weapon use involve blocking and weaving as much as they do attacking. When a creature damages you with a weapon attack while you are wielding this weapon, you may use your reaction to reduce the damage by your dexterity modifier. This property may be applied to piercing weapons as well.
 
+Blocking (X): Uses durability to block, (Default x: All)
+    1) You must be aware (not Flat-footed, conscious, etc) in relation to the attack
+    2) Uses a Reaction (AoO)
+
+    Any weapons with this property are crosslisted as shields, and count as a shield for feats
+
+    Light Thrown: Any thrown weapons which are also light
+    Thrown: Any thrown weapons
+    Blades: Any bladed weapons: Spears, Swords (Curved or Straight)
+    Arrows: Any similar projectiles: sling rocks, arros, bolts, darts, etc
+        Only applies for projectiles up to 1 size larger
+    Fire/Lightning: Blocks elemental attacks that normally require a Reflex Save, you can choose to block instead of rolling the save, this acts as if you rolled a pass on the save (for purposes of things like Evasion). Can also block damage of this type from any attack roll (e.g. you get attacked with a flame spear doing 1d4 fire + 1d4 Piercing, one use can block the fire damage only)
+
+    All: Blocks any attack, most shields have this
+
+    Feat: Increase uses of blocking by 1 (as if durability is 1 higher)
+    Magic Items: Auto-Repair after an Encounter?
+
+
 
 
 
@@ -378,12 +406,6 @@ Clubs
     TODO:: Move RAM from polearm to here and remove reach
     RAM: Area on crit, bullrush, trip?
 
-Close
-    Limb
-
-Fans
-    Parry
-
 Blades
 
 Sickles:
@@ -397,9 +419,6 @@ Flails:
     Bludgeoning
     AP (shield), +2 vs Cover
 
-Chains:
-    Reach
-
 Whips:
     Long Reach
     Indiana Jones
@@ -408,14 +427,22 @@ Polearms:
     Reach
     Various Misc Abilities
 
+    Note Halberds (and other hooked weapons) Should get +x to reposition
+
+    "Versatile": Can be shifted to a double sided weapon as a swift action.
+        How does damage get balanced?
+        The mainhand has its damaged reduced by 1 dice
+        The offhand counts as a light 1d6/B damage weapon
+        ? with the same crit bonus (but not multiplier)
+
 Spears
     Reach
     Various Misc Abilities
-    
+
 Staves
     Reach?
     Various Misc Abilities
-    
+
 Thrown Rocks
 
 Thrown Sharp
@@ -429,18 +456,24 @@ Crossbows
 
 ## Unique____________
 
+
 Chains:
     Grapple?
-    Garrote goes here?
     Inclusive Reach
     Count as thrown within their reach (for feats)
 
 Close:
     Mixed
+    Limb
+    Can be used in Grapple (including non-light)
+
+
 
 Fans
     Perform Bonus
     “Non-Weapon” concealment
+    Parry
+
 
 
 
@@ -530,8 +563,75 @@ Notes:
 Additions:
 
 Damage Type:
- + 0.25  Can use multiple Damage types (AT ONCE)
+ + 0.5  Can use multiple Damage types (AT ONCE)
  + 0.25  Can use multiple Damage types (by choice)
+ + 0.5?  Non-Lethal
+
+Maneuvers
+ + 0.5   +2 to a Maneuver
+ + 0.5   Charging
+ + 0.5   Blocking (1 Charge)
+ + .25   Blocking (Per extra use)
 
 Weapon Type:
  + 0.25  Finesse, Finesseable
+ + 1     Light
+ + 0.5   Throwing
+ + 0.5   Grappling (Non-Light)
+
+Crit
+ + 1     Crit Range
+ + 1     Crit Damage
+ + 0.5  Crit bonus action (Since it requires another roll, its not great)
+
+
+Reach
+ + 1      Extended (per 5ft donut)
+ + 1      Full (damage adjacent too)
+ - 0.5    Provoking
+
+
+
+
+
+## Pricing
+
+Light (Offhand)?  1gp   1lb    1d4
+1H (Primary)      2gp   2lb    1d6
+2H                3gp   5lb    1d8, 2d4
+    (treat as 1H+light)
+2H (Heavy)        6gp   7lb    1d10
+
+
+
+
+### Modifiers
+
+Thrown-Only   x 1/10    1/4 weight
+Ammunition?   x 1/2
+
+Piercing?  -
+Slashing?  x2
+Bludgeon?  x1.5
+
+Simple?   -
+Martial?  x5
+Exortic?  x10
+
+
+Finesse?  x2
+    Not usually 2H
+
+All-Metal? x2
+
+
+
+
+
+
+
+
+
+
+
+
