@@ -321,6 +321,13 @@ function init() {
             basis.hasDups = true;
         }
 
+        if (equipment.stats === undefined) {
+            equipment.stats = {}
+        }
+
+        equipment.stats.crit = equipment.stats.crit || 20;
+        equipment.stats.crit_mult = equipment.stats.crit_mult || 1;
+
         id_mapping[equipment.id] = equipment;
         equipment.outputs = {};
 
