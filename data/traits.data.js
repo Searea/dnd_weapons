@@ -55,6 +55,7 @@ ap: {
     'ap',
     'ap_shield',
     'ap_flesh',
+    'breaching',
     ],
 },
 type: {
