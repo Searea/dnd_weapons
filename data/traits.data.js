@@ -16,6 +16,8 @@ penalties: {
     'heavy', // Simply means it weights a lot, so you can't carry much
     'long',
     'improvised',
+    'provoking',
+    'unthreatening',
     ],
 },
 requirements: {
@@ -85,8 +87,18 @@ skills: {
     colour: 'powderblue',
     traits: [
     'hidden',
-    'performance',
     'intimidating',
+    'climb',
+    'skilled_climb',
+    'skilled_rope',
+    'rope',
+    ],
+},
+stun: {
+    colour: '',
+    traits: [
+        'subdual',
+        'subdual_optional',
     ],
 },
 
