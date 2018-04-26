@@ -63,7 +63,7 @@ EQUIPMENT = EQUIPMENT.concat([
         bludgeoning: true,
     },
     upgrades: [
-        'jitte',
+        'truncheon',
     ],
     aliases: {
     },
@@ -196,7 +196,7 @@ EQUIPMENT = EQUIPMENT.concat([
     }
 },
 {
-    id: 'jitte',
+    id: 'truncheon',
     categories: [
         'hammers-clubs-exotic',
         'polearms-staves-martial',
