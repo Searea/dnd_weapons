@@ -80,7 +80,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         '2h': true,
-        bullrush: 4,
+        knockback: 4,
     },
     more_traits: {
     },
@@ -99,7 +99,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 2.5 (2 damage, -1 2h, 0.5 on-crit, 1 maneuver)
         damage: '1d10',
-        on_crit: 'knock-back',
+        on_crit: 'knockback',
     }
 },
 
