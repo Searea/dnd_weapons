@@ -20,6 +20,7 @@ EQUIPMENT = EQUIPMENT.concat([
         thrown: true,
     },
     more_traits: {
+        finesseable: true,
     },
     damages: {
         piercing: true,
@@ -52,9 +53,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'Kīla': 'Buddhist', // Foci
     },
     stats: {
-        // Score: 1 (1 thrown, 1 light, -1 damage)
+        // Score: 1.5 (0.5 thrown, 1 light, -1 damage, 1 crit range)
         damage: '1d4',
-        crit: 20
+        crit: 19
     },
 },
 {
@@ -73,6 +74,7 @@ EQUIPMENT = EQUIPMENT.concat([
     more_traits: {
         hidden: true,
         strange: true,
+        finesse: true,
     },
     damages: {
         piercing: true,
@@ -86,9 +88,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'Fan Knife': '',
     },
     stats: {
-        // Score: 1 (1 thrown, 1 light, -1 damage)
+        // Score: 1.75 (0.5 thrown, 1 light, -1 damage, 1 crit range, 0.25 ability bonus (coneal))
         damage: '1d4',
-        crit: 20
+        crit: 19
     },
 },
 {
@@ -98,6 +100,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'blades--martial',
     ],
     traits: {
+        light: true,
     },
     more_traits: {
     },
@@ -106,7 +109,6 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     upgrades: [
         'longsword',
-        'sword_breaker',
     ],
     aliases: {
         'Wakizashi': 'Japan',
@@ -116,6 +118,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'Xiphos': 'Greek',
         'Cinquedea': 'Italy',
         'Dogslicer': 'Goblin',
+        'Butterfly Sword': 'China',
+        'Dragonsplit': '',
+        'Deer Horn Knife': 'China',
     },
     stats: {
         // Score: 2 (1 light, 1 crit range)
@@ -184,10 +189,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'Temple Sword': '',
     },
     stats: {
-        // Score: 4 (3 damage, 1 crit range, -1 two handed, 1 special)
+        // Score: 3 (3 damage, 1 crit range, -1 two handed)
         damage: '2d6',
-        crit: 19,
-        special: 'cleave on crit'
+        crit: 19
     },
 },
 {
@@ -196,9 +200,10 @@ EQUIPMENT = EQUIPMENT.concat([
         'blades--martial',
     ],
     traits: {
+        feint: 2,
+        finesse: true,
     },
     more_traits: {
-        finesse: true,
     },
     damages: {
         piercing: true,
@@ -214,43 +219,15 @@ EQUIPMENT = EQUIPMENT.concat([
         'Cane Sword': 'Hidden',
     },
     stats: {
-        // Score: 2 (2 crit range)
+        // Score: 2.25 (1 crit range, 0.25 Finesse, 1 special)
         damage: '1d6',
-        crit: 18
+        crit: 19,
+        on_crit: 'feint',
     },
 },
 
 //-----------------------------------
 // Special
-{
-    // Suggestion: Is there a reason this is a special weapon instead of just a short sword?
-    id: 'twin_blades',
-    categories: [
-        'blades--exotic',
-        'monk-allowed-exotic',
-    ],
-    traits: {
-        twin: true,
-    },
-    more_traits: {
-    },
-    damages: {
-        slashing: true,
-    },
-    upgrades: [
-    ],
-    aliases: {
-        'Butterfly Sword': 'China',
-        'Dragonsplit': '',
-        'Deer Horn Knife': 'China',
-    },
-    stats: {
-        // Score: 4 (1 crit range, 2 double, 1 special)
-        damage: '1d6',
-        crit: 19,
-        special: 'When wielding a pair of twin-blades, can attack with both using a standard attack'
-    },
-},
 {
     id: 'double_sword',
     categories: [
@@ -272,10 +249,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'Chan Zi dao': 'China',
     },
     stats: {
-        // Score: 4 (1 crit range, 2 double, 1 special)
-        damage: '1d6',
+        // Score: 4 (1 damage, 1 crit range, 1 double)
+        damage: '1d8',
         crit: 19,
-        special: 'critical hits allow you to roll 1 additional attack with the other side of the weapon'
     },
 },
 {
@@ -297,7 +273,7 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
     },
     stats: {
-        // Score: 1 (1 attachment, 1 light, -1 damage)
+        // Score: 1.5 (1.5 attachment, 1 light, -1 damage)
         damage: '1d4',
         crit: 20
     },
@@ -308,10 +284,16 @@ EQUIPMENT = EQUIPMENT.concat([
         'blades--exotic',
     ],
     traits: {
-        block: 'blades',
-        disarm: true,
+        block_blades: true,
+        shield_blades: 1,
+        disarm_blades: 2,
+        light: true
     },
     more_traits: {
+        finesse: true,
+        masterwork: [
+            'sunder' // All disarm work for sunder as well
+        ]
     },
     damages: {
         piercing: true,
@@ -323,42 +305,19 @@ EQUIPMENT = EQUIPMENT.concat([
         'Trident Dagger': '',
         'Main Gauche': '',
         'Broadblade Shortsword': '',
-    },
-    stats: {
-        // Score: 4 (-1 damage, 1 light, 1 thrown, 2 special, 1 defend)
-        damage: '1d4',
-        crit: 20,
-        special: 'improved disarm'
-    },
-},
-{
-    id: 'sword_breaker',
-    categories: [
-        'blades--exotic',
-    ],
-    traits: {
-        sunder_blades: true,
-        disarm_blades: true,
-    },
-    more_traits: {
-    },
-    damages: {
-        piercing: true,
-    },
-    upgrades: [
-    ],
-    aliases: {
+        'Sword Breaker': '',
         'Sword Catcher': 'Gnome',
         'Seven branched sword': 'China',
+
     },
     stats: {
-        // Score: 3 (-1 damage, 2 special, 2 special)
-        damage: '1d6',
+        // Score: 3 (-1 damage, 1 light, 1 special, 1 defend, 1 crit range)
+        damage: '1d4',
         crit: 19,
-        specia: 'improved disarm, improved sunder'
+        special: 'improved disarm',
+        on_crit: 'disarm',
     },
 },
-
 
 //-----------------------------------------
 // Monk
@@ -382,15 +341,10 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Karambit': 'Indonesia',
     },
-    stats: {
-        // Score: 1 (1 light, -1 damage, 1 crit range)
-        damage: '1d4',
-        crit: 19
-    },
 },
 
 //-----------------------------------------
-// Sickles
+// Sickle
 {
     id: 'sickle',
     categories: [
@@ -420,10 +374,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'Boline': 'Wiccan', // Foci?
     },
     stats: {
-        // Score: 2 (-1 damage, 1 light, 1 crit range and crit)
-        damage: '1d4',
-        crit: 19,
-        crit_mult: 2,
+        // Score: 2 (1 light, 1 crit mult)
+        damage: '1d6',
+        crit_mult: 3,
     },
 },
 {
@@ -435,6 +388,7 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         light: true,
         disarm: 4,
+        ap_shield: 2,
     },
     more_traits: {
         finesse: true,
@@ -450,10 +404,8 @@ EQUIPMENT = EQUIPMENT.concat([
         'Raptor Sickle': 'China',
     },
     stats: {
-        // Score: 4 (1 damage, 1 light, 1 disarm, 1 crit range)
-        damage: '1d8',
-        crit: 19,
-        special: 'critical hits allow you to roll 1 additional attack with the other side of the weapon'
+        // Score: 3 (1 light, 1 disarm, 1 ap)
+        damage: '1d6',
     },
 },
 {
@@ -497,9 +449,10 @@ EQUIPMENT = EQUIPMENT.concat([
         'Skallagrim': 'Modern Variant',
     },
     stats: {
-        // Score: 2 (2 crit range, 2 double, 1 special)
+        // Score: 2.25 (1 crit range, 1 on-crit, 0.25 finesse)
         damage: '1d6',
-        crit: 18
+        crit: 19,
+        on_crit: 'cleave',
     },
 },
 {
@@ -530,10 +483,10 @@ EQUIPMENT = EQUIPMENT.concat([
         'Courtblade': 'Elf',
     },
     stats: {
-        // Score: 4 (4 crit (range and multiplier), -1 twohanded, 1 damage)
-        damage: '1d8',
-        crit: 18,
-        crit_mult: 2,
+        // Score: 3.25 (1 crit range, -1 2h, 2 damage, 1 on-crit, 0.25 finesse)
+        damage: '1d10',
+        crit: 19,
+        on_crit: 'cleave',
     },
 },
 {
@@ -564,10 +517,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Shuang you': 'China',
     },
     stats: {
-        // Score: 4 (1 damage, 1 ap, 1 crit range, 1 special)
+        // Score: 3.75 (1 damage, 1 ap, 1 crit range, 0.5 special, 0.25 finesse)
+        // TODO:: OP
         damage: '1d8',
         crit: 19,
-        special: 'attempt to disarm on crit'
+        on_crit: 'disarm',
     },
 },
 ]);

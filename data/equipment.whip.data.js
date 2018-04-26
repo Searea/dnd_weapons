@@ -5,14 +5,18 @@ EQUIPMENT = EQUIPMENT.concat([
         'chains-whips-martial',
     ],
     traits: {
-        trip: true,
-        disarm: true,
-        reach: "0-15'",
+        trip: 2,
+        disarm: 2,
+        reach: "0'-15'",
+        light: true,
+        masterwork: [
+            'unprovoking'
+        ],
     },
     more_traits: {
         finesse: true,
+        provoking: true,
         unthreatening: true,
-        '1H': true,
     },
     damages: {
         bludgeoning: true,
@@ -25,6 +29,10 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         "Cat'o Nine Tails": '',
     },
+    stats: {
+        // Score: 3.25 (2 reach, -1 provoke, 1 maneuver, 1 light)
+        damage: '1d6',
+    }
 },
 {
     id: 'rope_dart',
@@ -33,14 +41,19 @@ EQUIPMENT = EQUIPMENT.concat([
         'monk-allowed-exotic',
     ],
     traits: {
-        trip: true,
+        trip: 2,
+        feint: 2,
         distracting: true,
-        reach: "0-15'",
+        reach: "0'-15'",
         '2H': true,
+        masterwork: [
+            'unprovoking'
+        ],
     },
     more_traits: {
         finesse: true,
         unthreatening: true,
+        provoking: true,
     },
     damages: {
         bludgeoning: true,
@@ -54,6 +67,12 @@ EQUIPMENT = EQUIPMENT.concat([
         'Whip Dagger': '',
         'Chain whip': '',
     },
+    stats: {
+        // Score: 3.25 (1 damage, 2 reach, -1 2h, -1 provoking, 0.5 trip, 0.5 distracting, 1 crit range, 0.25 finesse)
+        damage: '1d8',
+        crit: 19,
+        on_crit: 'distracting', // feint vs everyone in reach (allies can use too)
+    }
 },
 {
     id: 'war_whip',
@@ -61,11 +80,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'chains-whips-martial',
     ],
     traits: {
-        '2H': true,
-        reach: "0-10'",
+        reach: "0'-10'",
     },
     more_traits: {
         finesse: true,
+        unthreatening: true,
     },
     damages: {
         slashing: true,
@@ -78,6 +97,10 @@ EQUIPMENT = EQUIPMENT.concat([
         'War Whip': '',
         'Chain Flogger': '',
     },
+    stats: {
+        // Score: 2.25 (1 damage, 1.5 reach, 0.25 finesse, -0.5 unthreatening)
+        damage: '1d8',
+    }
 },
 {
     id: 'urumi',
@@ -85,12 +108,12 @@ EQUIPMENT = EQUIPMENT.concat([
         'chains-whips-exotic',
     ],
     traits: {
-        ap_shield: 2,
         reach: "0-10'",
     },
     more_traits: {
         finesse: true,
         '2H': true,
+        unthreatening: true,
     },
     damages: {
         slashing: true,
@@ -100,6 +123,10 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Urumi': 'Indian',
     },
+    stats: {
+        // Score: 3.25 (3 damage, 1.5 reach, 0.25 finesse, -0.5 unthreatening, -1 2h)
+        damage: '2d6',
+    }
 },
 {
     id: 'long_whip',
@@ -107,9 +134,10 @@ EQUIPMENT = EQUIPMENT.concat([
         'chains-whips-exotic',
     ],
     traits: {
-        trip: true,
-        disarm: true,
-        reach: "5-20'",
+        trip: 2,
+        disarm: 2,
+        reach: "10'-20'",
+        pull: 2, 
     },
     more_traits: {
         finesse: true,
@@ -122,6 +150,11 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
     },
+    stats: {
+        // Score: 4 (1.5 maneuver, 0.25 finesse, -0.5 unthreaning, 1.5 reach, 0.75 on-crit, 0.5 drag)
+        damage: '1d6',
+        on_crit: 'trip/disarm/pull',
+    }
 },
 {
     id: 'braid_whip',
@@ -147,6 +180,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'Braid Whip': '',
         'Braid Knife': 'Halfling',
     },
+    // TODO::
 },
 {
     id: 'grappling_whip',
@@ -155,7 +189,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         ability: true,
-        skilled_rope: 2,
+        skilled_rope: 2, // TODO:: rebalance
     },
     more_traits: {
         strange: true,
@@ -193,6 +227,4 @@ EQUIPMENT = EQUIPMENT.concat([
         'Lynxpaw': '',
     },
 },
-
-
 ]);

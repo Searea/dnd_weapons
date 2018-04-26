@@ -8,6 +8,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'ap_shield': 2,
     },
     more_traits: {
+        light: true,
     },
     damages: {
         bludgeoning: true,
@@ -18,6 +19,10 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Chigiriki': 'Japan',
     },
+    stats: {
+        // Score: 2 (1 ap, 1 light)
+        damage: '1d6',
+    }
 },
 {
     id: 'heavy_flail',
@@ -37,6 +42,10 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
     },
+    stats: {
+        //Score: 3 (2 ap, 1 damage)
+        damage: '1d8',
+    }
 },
 {
     id: 'greatflail',
@@ -55,11 +64,16 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
     },
+    stats: {
+        // Score: 4 (-1 2h, 3 ap, 2 damage)
+        damage: '1d10',
+    }
 },
 {
     id: 'three_section_staff',
     categories: [
         'chains-flails-exotic',
+        'monk-allowed-exotic',
     ],
     traits: {
         'ap_shield': 2,
@@ -74,6 +88,10 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
     },
+    stats: {
+        // Score: 3.5 (1 ap, 1.5 reach, 1 damage)
+        damage: '1d8',
+    }
 },
 //-----------------------------
 // Chains
@@ -83,14 +101,17 @@ EQUIPMENT = EQUIPMENT.concat([
         'chains--martial',
     ],
     traits: {
+        grapple: 2,
         light: true,
-        grapple: '+2, free on crit',
+        masterwork: [
+            'fire'
+        ],
     },
     more_traits: {
+        finesse: true
     },
     damages: {
         bludgeoning: true,
-        slashing: true,
     },
     upgrades: [
         'war_chain',
@@ -98,7 +119,14 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Kusari-Fundo': 'Japan',
         'Bladed Scarf': 'Hidden', // Slashing
+        'Fire Poi': 'Masterwork',
+        'Battle Poi': 'Masterwork',
     },
+    stats: {
+        // Score 2 (0.5 grapple, 1 light, 0.5 on-crit)
+        damage: '1d6',
+        on_crit: 'grapple'
+    }
 },
 {
     id: 'war_chain',
@@ -107,11 +135,18 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         trip: true,
-        reach: "10'",
+        reach: "0'-10'",
+        '2h': true,
+        disarm: 2,
+        masterwork: [
+            'fire'
+        ],
     },
     more_traits: {
         // 2H but no strength bonus for 2 hands
         // Add a trait for that
+        unwieldy: true,
+        finesse: true,
     },
     damages: {
         bludgeoning: true,
@@ -120,59 +155,19 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
         'Spiked Chain': '',
-    },
-},
-{
-    id: 'fire_chain',
-    categories: [
-        'chains--exotic',
-        'monk-allowed-exotic',
-    ],
-    traits: {
-        reach: "10'",
-        fire: true,
-    },
-    more_traits: {
-        strange: true,
-    },
-    damages: {
-        fire: true,
-        // Extinguished as a full round action (in sand or water)
-        // Acts as a lit torch
-        // Can be lit as a standard action
-    },
-    upgrades: [
-    ],
-    aliases: {
-        'Fire Poi': '',
-        'Battle Poi': '',
-    },
-},
-{
-    id: 'chain_hammer',
-    categories: [
-        'chains--martial',
-        'monk-allowed-martial',
-    ],
-    traits: {
-        reach: "10'",
-        double: true,
-    },
-    more_traits: {
-    },
-    damages: {
-        bludgeoning: true,
-    },
-    upgrades: [
-    ],
-    aliases: {
+        'Chain Hammer': '',
         'Surujin': 'Japan',
         'Meteor Hammer': 'China',
         'Kusarigama': 'Japan',
         "Dragon's Fist": '',
+        'Fire Poi': 'Masterwork',
+        'Battle Poi': 'Masterwork',
     },
+    stats: {
+        // Score: 2.75 (-1.5 2h, 2 reach, 0.25 finesse, 1 damage, 0.5 trip, 0.5 disarm)
+        damage: '2d4'
+    }
 },
-
 {
     id: 'ball_chain',
     categories: [
@@ -193,15 +188,17 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Ball & Chain': '',
     },
+    // TODO:: stats
 },
 {
-    id: 'nunchucks',
+    id: 'nunchaku',
     categories: [
         'chains--martial',
         'monk-allowed-martial',
     ],
     traits: {
         light: true,
+        disarm: 4,
     },
     more_traits: {
     },
@@ -209,19 +206,26 @@ EQUIPMENT = EQUIPMENT.concat([
         bludgeoning: true,
     },
     upgrades: [
-        'heavy_nunchucks',
+        'heavy_nunchaku',
     ],
     aliases: {
-        'Nunchucks': 'Japan',
+        'Nunchaku': 'Japan',
     },
+    stats: {
+        // Score: 2.5 (1 light, 1 disarm, 0.5 on-crit)
+        damage: '1d6',
+        on_crit: 'disarm',
+    }
 },
 {
-    id: 'heavy_nunchucks',
+    id: 'heavy_nunchaku',
     categories: [
         'chains--exotic',
         'monk-allowed-exotic',
     ],
     traits: {
+        disarm: 4,
+        '2h': true,
     },
     more_traits: {
     },
@@ -231,8 +235,14 @@ EQUIPMENT = EQUIPMENT.concat([
     upgrades: [
     ],
     aliases: {
-        'Heavy Nunchucks': 'Japan',
+        'Heavy Nunchaku': 'Japan',
         'Flindbar': 'Gnoll',
     },
+    stats: {
+        // Score: 3.5 (2 damage, 1 disarm, 0.5 on-crit, -1 2h, 1 crit range)
+        damage: '1d10',
+        on_crit: 'disarm',
+        crit: 19,
+    }
 },
 ]);

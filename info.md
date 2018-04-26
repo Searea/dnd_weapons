@@ -563,34 +563,41 @@ Notes:
 Additions:
 
 Damage Type:
- + 0.5  Can use multiple Damage types (AT ONCE)
+ + 0.5   Can use multiple Damage types (AT ONCE)
  + 0.25  Can use multiple Damage types (by choice)
- + 0.5?  Non-Lethal
+ + 0.25? Non-Lethal (by choice)
 
 Maneuvers
  + 0.5   +2 to a Maneuver
  + 0.5   Charging
  + 0.5   Blocking (1 Charge)
- + .25   Blocking (Per extra use)
+ + 0.5   Blocking (Per extra use)
 
 Weapon Type:
  + 0.25  Finesse, Finesseable
  + 1     Light
  + 0.5   Throwing
  + 0.5   Grappling (Non-Light)
+ - 1     2H
+ + 1     Double
+ + 1.5   Attachment
 
 Crit
  + 1     Crit Range
  + 1     Crit Damage
- + 0.5  Crit bonus action (Since it requires another roll, its not great)
+ + 0.5   Crit bonus action (Since it requires another roll, its not great)
 
 
 Reach
- + 1      Extended (per 5ft donut)
+ + 0.5    Extended (per 5ft donut)
  + 1      Full (damage adjacent too)
  - 0.5    Provoking
 
+Skills
+ + 0.25   Conceal
 
+Special
+ + 1     AP (2)
 
 
 

@@ -51,6 +51,7 @@ EQUIPMENT = EQUIPMENT.concat([
                 'great rend',
             'rake (grapple)', // Note: "Grapple" attacks just allow the orignal attack to be used in grapple
         ],
+        blade: true,
     },
     stats: {
         damage: '1d4',
@@ -130,6 +131,7 @@ EQUIPMENT = EQUIPMENT.concat([
         extra_feats: [
             'poison', // Bonus DC increase? or just make it more likely for monsters?
         ],
+        blade: true,
     },
     stats: {
         damage: '1d4',

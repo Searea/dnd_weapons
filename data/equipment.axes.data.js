@@ -71,8 +71,8 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     stats: {
         // Throwing Axe
-        // Score: 3 (1 damage, 1 light, 1 thrown)
-        damage: '2d4',
+        // Score: 2 (1 light, 1 thrown)
+        damage: '1d6',
         crit: 20,
     },
 },
@@ -98,8 +98,8 @@ EQUIPMENT = EQUIPMENT.concat([
         'Bhuj': 'Indian', // Has a Gandasa in the handle
     },
     stats: {
-        // Score: 3 (3 damage)
-        damage: '2d6',
+        // Score: 2 (2 damage)
+        damage: '1d10',
         crit: 20
     },
 },
@@ -243,7 +243,7 @@ EQUIPMENT = EQUIPMENT.concat([
         // Score: 5 (1 damage, 1 light, 1 climb, 2 special)
         damage: '2d4',
         crit: 20,
-        special: 'improved grab',
+        special: 'grapple on crit',
     },
 },
 {

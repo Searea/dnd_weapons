@@ -262,7 +262,7 @@ EQUIPMENT = EQUIPMENT.concat([
         charging: true,
     },
     more_traits: {
-        dive: '+2',
+        dive: 2,
     },
     damages: {
         piercing: true,
