@@ -328,6 +328,13 @@ function init() {
         equipment.stats.crit = equipment.stats.crit || 20;
         equipment.stats.crit_mult = equipment.stats.crit_mult || 1;
 
+        if (equipment.stats.on_crit) {
+            var crit_uses = equipment.stats.on_crit.split('/');
+            _.each(crit_uses, (use) => {
+                equipment.more_traits['on_crit_' + use] = true;
+            })
+        }
+
         id_mapping[equipment.id] = equipment;
         equipment.outputs = {};
 

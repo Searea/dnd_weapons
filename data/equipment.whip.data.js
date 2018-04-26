@@ -43,7 +43,6 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         trip: 2,
         feint: 2,
-        distracting: true,
         reach: "0'-15'",
         '2H': true,
         masterwork: [
@@ -137,7 +136,7 @@ EQUIPMENT = EQUIPMENT.concat([
         trip: 2,
         disarm: 2,
         reach: "10'-20'",
-        pull: 2, 
+        pull: 2,
     },
     more_traits: {
         finesse: true,

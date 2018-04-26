@@ -80,6 +80,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'reach': "0'-10'",
     },
     more_traits: {
+        maneuver: true,
     },
     damages: {
         bludgeoning: true,

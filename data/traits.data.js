@@ -81,6 +81,8 @@ skills: {
 maneuver: {
     colour: 'skyblue',
     traits: [
+    'distracting',
+
     'vs_environment',
     'plant_cutter',
     'entangle',
@@ -92,6 +94,13 @@ maneuver: {
     'disarm',
     'sunder',
     'battering',
+
+    'on_crit_disarm',
+    'on_crit_feint',
+    'on_crit_grapple',
+    'on_crit_cleave',
+    'on_crit_pull',
+    'on_crit_distracting',
     ],
 },
 };

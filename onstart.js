@@ -35,17 +35,18 @@ onstart = function() {
     // highlight({colour: 'ffa07a', trait: 'piercing'});
     // highlight({colour: 'add8e6', trait: 'slashing'});
 
-    // highlight({colour: 'green', trait_group: 'defensive'})
-    // highlight({colour: 'violet', trait_group: 'ap'})
+    highlight({colour: 'green', trait_group: 'defensive'})
+    highlight({colour: 'violet', trait_group: 'ap'})
+    highlight({colour: 'skyblue', trait_group: 'maneuver'})
 
     // Damage
-    highlight({colour: 'FFDDDD', damage: '1d4'})
-    highlight({colour: 'FFAA88', damage: '1d6'})
-    highlight({colour: 'FF4466', damage: '1d8'})
-    highlight({colour: 'FF4466', damage: '2d4'})
-    highlight({colour: 'FF0000', damage: '1d10'})
-    highlight({colour: 'FF0000', damage: '1d12'})
-    highlight({colour: 'FF0000', damage: '2d6'})
+    // highlight({colour: 'FFDDDD', damage: '1d4'})
+    // highlight({colour: 'FFAA88', damage: '1d6'})
+    // highlight({colour: 'FF4466', damage: '1d8'})
+    // highlight({colour: 'FF4466', damage: '2d4'})
+    // highlight({colour: 'FF0000', damage: '1d10'})
+    // highlight({colour: 'FF0000', damage: '1d12'})
+    // highlight({colour: 'FF0000', damage: '2d6'})
 
 
     // Work with the basic weapons
