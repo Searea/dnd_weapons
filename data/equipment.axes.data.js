@@ -41,11 +41,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'monk-allowed-martial',
     ],
     traits: {
-        'light': true,
         thrown: true,
+        breaching: true, 
+        light: true,
     },
     more_traits: {
-        twin: true,
     },
     damages: {
         slashing: true,
@@ -71,9 +71,8 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     stats: {
         // Throwing Axe
-        // Score: 2 (1 light, 1 thrown)
+        // Score: 2 (0.5 thrown, 0.5 breach, 1 light)
         damage: '1d6',
-        crit: 20,
     },
 },
 {
@@ -82,6 +81,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'axes-axes-martial',
     ],
     traits: {
+        breaching: true, 
     },
     more_traits: {
     },
@@ -98,9 +98,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'Bhuj': 'Indian', // Has a Gandasa in the handle
     },
     stats: {
-        // Score: 2 (2 damage)
-        damage: '1d10',
-        crit: 20
+        // Score: 2.5 (1 damage, 1 crit damage, 0.5 breech)
+        damage: '1d8',
+        crit_mult: 3,
     },
 },
 {
@@ -110,6 +110,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         '2h': true,
+        breaching: true,
     },
     more_traits: {
     },
@@ -121,9 +122,9 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
     },
     stats: {
-        // Score: 5 (5 damage, 1 crit, -1 twohanded)
-        damage: '2d8',
-        crit: 'x2'
+        // Score: 3.5 (3 damage, 1 crit damage, -1 twohanded, 0.5 breech)
+        damage: '1d12',
+        crit_mult: 3,
     },
 },
 
@@ -135,12 +136,10 @@ EQUIPMENT = EQUIPMENT.concat([
     id: 'light_pick',
     categories: [
         'axes-picks-martial',
-        'thrown-sharp-martial',
     ],
     traits: {
         light: true,
-        thrown: true,
-        'ap': 2,
+        ap: 4,
     },
     more_traits: {
     },
@@ -153,9 +152,8 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
     },
     stats: {
-        // Score: 3 (1 light, 1 ap, 1 thrown)
-        damage: '1d6',
-        crit: 20
+        // Score: 3 (1 light, 2 ap)
+        damage: '1d6'
     },
 },
 {
@@ -168,7 +166,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'hammers': 'morning star',
     },
     traits: {
-        'ap': 4,
+        ap: 4,
     },
     more_traits: {
     },
@@ -188,8 +186,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     stats: {
         // Score: 3 (1 damage, 2 ap)
-        damage: '2d4',
-        crit: 20
+        damage: '1d8'
     },
 },
 {
@@ -199,7 +196,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         '2h': true,
-        'ap': 6,
+        ap: 6,
     },
     more_traits: {
     },
@@ -212,8 +209,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     stats: {
         // Score: 5 (3 damage, 3 ap, -1 twohanded)
-        damage: '2d6',
-        crit: 20
+        damage: '1d12'
     },
 },
 
@@ -229,7 +225,8 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     more_traits: {
         climb: 1,
-        skilled_climb: 4
+        skilled_climb: 4,
+        grapple: 2,
     },
     damages: {
         piercing: true,
@@ -240,10 +237,10 @@ EQUIPMENT = EQUIPMENT.concat([
         'Boarding Axe': 'Naval',
     },
     stats: {
-        // Score: 5 (1 damage, 1 light, 1 climb, 2 special)
-        damage: '2d4',
-        crit: 20,
-        special: 'grapple on crit',
+        // Score: 4 (1 light, 1 climb, 0.5 on_crit, 2 crit range, -1 damage, 0.5 grapple)
+        damage: '1d4',
+        crit: 18,
+        on_crit: 'grapple',
     },
 },
 {
@@ -253,6 +250,8 @@ EQUIPMENT = EQUIPMENT.concat([
         'shields--exotic',
     ],
     traits: {
+        shield: 1,
+        breaching: true, 
     },
     more_traits: {
         strange: true,
@@ -266,9 +265,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'Buckler Axe': 'Dwarven',
     },
     stats: {
-        // Score: 5 (3 damage, 2 shield)
-        damage: '2d6',
-        crit: 20
+        // Score: 3.5 (1 damage, 1 shield, 1 crit damage, 0.5 breach)
+        damage: '1d8',
+        crit_mult: 3
     },
 },
 {
@@ -278,10 +277,12 @@ EQUIPMENT = EQUIPMENT.concat([
         'thrown-sharp-exotic',
     ],
     traits: {
-        thrown: true,
+        thrown: true, 
         powerful: true,
+        breaching: true, 
     },
     more_traits: {
+        ranged: true, // thrown only
     },
     damages: {
         slashing: true,
@@ -292,10 +293,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'Double Axehead': 'Orc',
     },
     stats: {
-        // Score: 5 (3 damage, 2 double, -1 twohanded, 1 special)
-        damage: '2d6',
-        crit: 20,
-        special: 'critical hits allow you to roll 1 additional attack with the other side of the weapon'
+        // Score: 4 (2 damage, 1 crit damage, 0.5 breach, 0.5 powerful, 0.5 thrown, -0.5 ranged)
+        damage: '1d10',
+        crit_mult: 3,
     },
 },
 {
@@ -308,10 +308,11 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         light: true,
         thrown: true,
-        ap_shield: 2,
+        ap_shield: 4,
         // The size of this weapon was a huge plus on the battlefield, because even if it was thrown into a shield, it was long enough that it could roll over the edge and still strike the target.
     },
     more_traits: {
+        ranged: true, // thrown only
     },
     damages: {
         piercing: true,
@@ -324,9 +325,8 @@ EQUIPMENT = EQUIPMENT.concat([
         'Mambele': 'African (Mangbetu)',
     },
     stats: {
-        // Score: 5 (1 damage, 1 light, 1 thrown, 2 ap)
-        damage: '2d4',
-        crit: 20
+        // Score: 4 (1 damage, 2 ap, 0.5 thrown, 1 light, -0.5 ranged)
+        damage: '1d8',
     },
 },
 

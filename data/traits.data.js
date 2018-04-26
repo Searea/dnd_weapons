@@ -106,6 +106,7 @@ maneuver: {
     'disarm',
     'sunder',
     'battering',
+    'knockback',
 
     'on_crit_disarm',
     'on_crit_feint',
@@ -113,6 +114,7 @@ maneuver: {
     'on_crit_cleave',
     'on_crit_pull',
     'on_crit_distracting',
+    'on_crit_knockback'
     ],
 },
 };

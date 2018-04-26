@@ -106,31 +106,6 @@ EQUIPMENT = EQUIPMENT.concat([
         'Brandistock': 'Italy',
     },
 },
-{
-    id: 'jitte',
-    categories: [
-        'polearms-staves-exotic',
-        'monk-allowed-exotic',
-    ],
-    traits: {
-        block: 'blades',
-        subdual: true,
-        disarm: true,
-    },
-    more_traits: {
-    },
-    damages: {
-        bludgeoning: true,
-    },
-    upgrades: [
-    ],
-    aliases: {
-        'Jitte': 'Japan',
-        'Hachiwari': 'Japan',
-        'Kabutowari': 'Japan',
-        'Ekrund Rod': 'Dwarven',
-    },
-},
 //---------------------------------------
 // Spears
 {
@@ -653,27 +628,6 @@ EQUIPMENT = EQUIPMENT.concat([
         '*-Guisarme': '', // Attachment for other spears perhaps? (then you have flavour)
         'Kama Yari': 'Japan',
         'Hooked Hammer': 'Gnome', // But with a hammer specifically?
-    },
-},
-{
-    id: 'ram',
-    categories: [
-        'polearms--exotic',
-    ],
-    traits: {
-        reach: "10'",
-        battering: true, // crit bull rush, or bonus to bull rush
-    },
-    more_traits: {
-    },
-    damages: {
-        bludgeoning: true,
-    },
-    upgrades: [
-    ],
-    aliases: {
-        'Skull Ram': 'Orc',
-        'Portable Ram': '',
     },
 },
 ]);

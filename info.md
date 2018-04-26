@@ -342,7 +342,7 @@ Blocking (X): Uses durability to block, (Default x: All)
 General Ideas:
 
 Specialized Counters:
-    AP (Heavy & Med)
+    AP (Heavy)
     AP (Shield)
         Note: this also bypasses "Blocking" weapons if they apply.
         Note: this also bypasses any active shield ability (Durability sacrificed for DR?)
@@ -598,6 +598,7 @@ Skills
 
 Special
  + 1     AP (2)
+ + 0.5   Brutal (reroll 1)
 
 
 
