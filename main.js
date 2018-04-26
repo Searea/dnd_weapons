@@ -143,11 +143,11 @@ function addColour($elem, colour) {
 
     var gradient;
     if (colours.length == 1) {
-        gradient = `#${colours[0]}70`;
+        gradient = `#${colours[0]}85`;
     } else if (colours.length == 2) {
-        gradient = `linear-gradient(80deg, #${colours[0]}70 45%, #${colours[1]}70 55%)`;
+        gradient = `linear-gradient(80deg, #${colours[0]}85 45%, #${colours[1]}85 55%)`;
     } else if (colours.length == 3) {
-        gradient = `linear-gradient(80deg, #${colours[0]}70 30%, #${colours[1]}70 35%, #${colours[1]}70 65%, #${colours[2]}70 70%)`;
+        gradient = `linear-gradient(80deg, #${colours[0]}85 30%, #${colours[1]}85 35%, #${colours[1]}85 65%, #${colours[2]}85 70%)`;
     }
 
     $elem.attr('data-colours', _.join(colours, ' '));

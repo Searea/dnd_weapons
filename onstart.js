@@ -29,9 +29,24 @@
 
 onstart = function() {
     highlight({reset: true});
-    highlight({colour: '90ee90', trait: 'bludgeoning'});
-    highlight({colour: 'ffa07a', trait: 'piercing'});
-    highlight({colour: 'add8e6', trait: 'slashing'});
+
+    // Damage Types
+    // highlight({colour: '90ee90', trait: 'bludgeoning'});
+    // highlight({colour: 'ffa07a', trait: 'piercing'});
+    // highlight({colour: 'add8e6', trait: 'slashing'});
+
+    // highlight({colour: 'green', trait_group: 'defensive'})
+    // highlight({colour: 'violet', trait_group: 'ap'})
+
+    // Damage
+    highlight({colour: 'FFDDDD', damage: '1d4'})
+    highlight({colour: 'FFAA88', damage: '1d6'})
+    highlight({colour: 'FF4466', damage: '1d8'})
+    highlight({colour: 'FF4466', damage: '2d4'})
+    highlight({colour: 'FF0000', damage: '1d10'})
+    highlight({colour: 'FF0000', damage: '1d12'})
+    highlight({colour: 'FF0000', damage: '2d6'})
+
 
     // Work with the basic weapons
     // Light, 1H, 2H
