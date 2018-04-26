@@ -87,8 +87,11 @@ skills: {
     colour: 'powderblue',
     traits: [
     'hidden',
-    'performance',
     'intimidating',
+    'climb',
+    'skilled_climb',
+    'skilled_rope',
+    'rope',
     ],
 },
 stun: {

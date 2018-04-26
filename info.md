@@ -387,6 +387,7 @@ Spear:
 Axes:
     Slashing
     Breaching (x2 Dmg vs Objects?)
+        Also if the attack is blocked, 1/2 damage still goes through
     Sunder Shields (on crit: half damage can go to the shield?) (or half damage goes through shield)
     Brutal
     Voidpinky
@@ -598,6 +599,7 @@ Skills
 
 Special
  + 1     AP (2)
+
 
 
 
