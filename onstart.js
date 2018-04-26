@@ -40,6 +40,7 @@ onstart = function() {
     highlight({colour: 'violet', trait_group: 'ap'})
     highlight({colour: 'skyblue', trait_group: 'maneuver'})
     highlight({colour: 'fffac8', trait_group: 'ranged'})
+    highlight({colour: 'ffb080', trait_group: 'stun'})
 
     // Damage
     // highlight({colour: 'FFDDDD', damage: '1d4'})
