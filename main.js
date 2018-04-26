@@ -370,16 +370,23 @@ function init() {
 
         // Figure out the trait groups this belongs to
         equipment.trait_groups = {};
-        _.each(equipment.all_traits, (value, key) => {
-
-            var group = findGroup(key);
-            if (!group) {
-                return;
+        _.each(TRAIT_GROUPINGS, (trait_group, trait_group_name) => {
+            var intersection = _.intersection(trait_group.traits, Object.keys(equipment.all_traits));
+            if (intersection.length >= 1) {
+                equipment.trait_groups[trait_group_name] = trait_group.colour;
             }
-            var colour = TRAIT_GROUPINGS[group].colour;
+        })
 
-            equipment.trait_groups[group] = colour;
-        });
+        // _.each(equipment.all_traits, (value, key) => {
+
+        //     var group = findGroup(key);
+        //     if (!group) {
+        //         return;
+        //     }
+        //     var colour = TRAIT_GROUPINGS[group].colour;
+
+        //     equipment.trait_groups[group] = colour;
+        // });
     });
 
 

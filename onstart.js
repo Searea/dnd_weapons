@@ -35,9 +35,11 @@ onstart = function() {
     // highlight({colour: 'ffa07a', trait: 'piercing'});
     // highlight({colour: 'add8e6', trait: 'slashing'});
 
+    // Use (Aimed at)
     highlight({colour: 'green', trait_group: 'defensive'})
     highlight({colour: 'violet', trait_group: 'ap'})
     highlight({colour: 'skyblue', trait_group: 'maneuver'})
+    highlight({colour: 'fffac8', trait_group: 'ranged'})
 
     // Damage
     // highlight({colour: 'FFDDDD', damage: '1d4'})

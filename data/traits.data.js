@@ -3,6 +3,8 @@ defensive: {
     colour: 'green',
     traits: [
     'block',
+    'block_blades',
+    'shield_blades',
     ],
 },
 penalties: {
@@ -66,6 +68,16 @@ type: {
     'glove',
     'versatile',
     'unthreatening',
+    ],
+},
+ranged: {
+    colour: '',
+    traits: [
+    'projectile',
+    'thrown',
+    'unthreatening',
+    'provoking',
+    'ammo',
     ],
 },
 
