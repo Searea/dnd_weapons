@@ -354,6 +354,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         light: true,
+        ap_flesh: 2,
     },
     more_traits: {
         finesse: true,
@@ -374,9 +375,8 @@ EQUIPMENT = EQUIPMENT.concat([
         'Boline': 'Wiccan', // Foci?
     },
     stats: {
-        // Score: 2 (1 light, 1 crit mult)
+        // Score: 2 (1 light, 1 ap)
         damage: '1d6',
-        crit_mult: 3,
     },
 },
 {
@@ -415,6 +415,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'druid-allowed-martial',
     ],
     traits: {
+        ap_flesh: 2,
     },
     more_traits: {
         finesse: true,
@@ -449,7 +450,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'Skallagrim': 'Modern Variant',
     },
     stats: {
-        // Score: 2.25 (1 crit range, 1 on-crit, 0.25 finesse)
+        // Score: 2.75 (1 crit range, 0.5 on-crit, 0.25 finesse, 1 ap)
         damage: '1d6',
         crit: 19,
         on_crit: 'cleave',
@@ -464,6 +465,7 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         // Sickles have a lower damage, but higher crit?
         '2H': true,
+        ap_flesh: 2,
     },
     more_traits: {
         finesse: true,
@@ -483,7 +485,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'Courtblade': 'Elf',
     },
     stats: {
-        // Score: 3.25 (1 crit range, -1 2h, 2 damage, 1 on-crit, 0.25 finesse)
+        // Score: 3.75 (1 crit range, -1 2h, 2 damage, 0.5 on-crit, 0.25 finesse, 1)
         damage: '1d10',
         crit: 19,
         on_crit: 'cleave',

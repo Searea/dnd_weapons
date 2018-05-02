@@ -584,7 +584,7 @@ Damage Type:
 
 Maneuvers
  + 0.5   +2 to a Maneuver
- + 0.5   Charging
+ + 1     Charging
  + 0.5   Blocking (1 Charge)
  + 0.5   Blocking (Per extra use)
 

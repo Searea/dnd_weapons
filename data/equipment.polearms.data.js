@@ -7,20 +7,53 @@ EQUIPMENT = EQUIPMENT.concat([
         'druid-allowed-basic',
     ],
     traits: {
-        'double': true,
+        double: true,
+        defensive: true,    // Bonus AC when defensive stance
     },
     more_traits: {
+        masterwork: [
+            'fire'
+        ],
     },
     damages: {
         bludgeoning: true,
     },
     upgrades: [
         'longstaff',
-        'lantern_staff',
     ],
     aliases: {
         'Jo': 'Japan',
         'Shillelagh': 'Irish',
+    },
+    stats: {
+        // Score: 1.5 (1 double, 0.5 defensive)
+        damage: '1d6',
+    }
+},
+{
+    id: 'shortstaff',
+    categories: [
+        'polearms-staves-martial',
+        'monk-allowed-martial',
+        'druid-allowed-martial',
+    ],
+    traits: {
+        defensive: true,
+        finessable: true,
+        grapple: 2,
+    },
+    more_traits: {
+    },
+    upgrades: [
+    ],
+    aliases: {
+        'Hanbo': 'Japan',
+        'Cane': 'Improvised',
+        'Dang Bong': 'China',
+    },
+    stats: {
+        // Score: 2.25 (1 damage, 0.5 defensive, 0.5 grapple, 0.25 finesse)
+        damage: '1d8',
     },
 },
 {
@@ -30,10 +63,14 @@ EQUIPMENT = EQUIPMENT.concat([
         'monk-allowed-martial',
     ],
     traits: {
-        blocking: true,
         reach: "10'",
+        double: true,
+        defensive_flank: true,   // Can't be flanked when defensive stance
     },
     more_traits: {
+        masterwork: [
+            'fire'
+        ],
     },
     damages: {
         bludgeoning: true,
@@ -44,6 +81,10 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Bo': 'Japan',
     },
+    stats: {
+        // Score: 2 (1 defensive, 1 double)
+        damage: '1d6',
+    }
 },
 {
     id: 'slingstaff',
@@ -54,6 +95,8 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         ranged: true,
+        defensive: true,
+        double: true,
     },
     more_traits: {
         ammo: 'grenades, stones',
@@ -65,26 +108,10 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
     },
-},
-{
-    id: 'lantern_staff',
-    categories: [
-        'polearms-staves-exotic',
-        'druid-allowed-exotic',
-    ],
-    traits: {
-        double: true,
-    },
-    more_traits: {
-    },
-    damages: {
-        bludgeoning: true,
-        fire: true
-    },
-    upgrades: [
-    ],
-    aliases: {
-    },
+    stats: {
+        // Score: 2 (1 double, 0.5 defensive, 0.5 ranged)
+        damage: '1d6/???', // TODO:: ranged damage
+    }
 },
 {
     id: 'feather_staff',
@@ -92,10 +119,12 @@ EQUIPMENT = EQUIPMENT.concat([
         'polearms-staves-exotic',
     ],
     traits: {
-        hidden: 'as staff',
-        reach: "10'",
+        double: true,
+        block_blades: true,
+        defensive: true,
     },
-    more_traits: {
+    more_traits: {        
+        hidden: 'as staff',
     },
     damages: {
         piercing: true,
@@ -105,6 +134,10 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Brandistock': 'Italy',
     },
+    stats: {
+        // Score: 3 (1 double, 1 damage, 0.5 block, 0.5 defensive)
+        damage: '1d8',
+    }
 },
 //---------------------------------------
 // Spears
@@ -115,9 +148,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'druid-allowed-basic',
     ],
     traits: {
+        bracing: true,    // Double against charge
     },
     more_traits: {
-        '1H': true,
     },
     damages: {
         piercing: true,
@@ -137,13 +170,12 @@ EQUIPMENT = EQUIPMENT.concat([
         'Ox-Tongue Spear': '',
         'Swordstav': 'Swiss',
         'Omi Yari': '',
-
-        // Could be its own "Boar Spears"
-        'Bohemian Earspoon': '',
-        'Bear Spear': '',
-        'Spontoon': '',
-        'Boar Spear': '',
+        'Thrusting Spear': '',
     },
+    stats: {
+        // Score: 1.5 (1 damage, 0.5 brace)
+        damage: '1d8',
+    }
 },
 {
     id: 'longspear',
@@ -152,6 +184,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         reach: "10'",
+        bracing: true,    // Attacks of opportunity work for this
     },
     more_traits: {
         '2H': true,
@@ -167,13 +200,17 @@ EQUIPMENT = EQUIPMENT.concat([
         'light pike': '',
         'light lance': '',
     },
+    stats: {
+        // Score: 2 (2 damage, 0.5 brace, 0.5 brace/reach, -1 2h)
+        damage: '1d10',
+    }
 },
 {
     id: 'stiletto',
     categories: [
         'close--martial',
         'monk-allowed-martial',
-
+        'polearms-spears-martial',
         'blades--exotic',
         'thrown-sharp-martial',
     ],
@@ -185,8 +222,7 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         light: true,
         thrown: true,
-        wounding: '?',
-        ap: '?',
+        wounding: 2,
     },
     more_traits: {
     },
@@ -205,19 +241,25 @@ EQUIPMENT = EQUIPMENT.concat([
         'Quadrens': 'Roman',
         'Long Knife': 'Drow',
     },
+    stats: {
+        // Score: 2.5 (0.5 thrown, 1 light, 1 ap)
+        damage: '1d6',
+    }
 },
 {
     id: 'pike',
     categories: [
-        'polearms-spears-martial',
+        'polearms-spears-exotic',
     ],
     traits: {
         // Maybe 15-20 ? or just 15
         // Maybe if you have exotic prof you get 20'
-        reach: "15-20'",
+        reach: "15'-20'",
+        brace: true,
     },
     more_traits: {
         strange: true,
+        '2H': true,
     },
     damages: {
         piercing: true,
@@ -226,7 +268,12 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
         'Awlpike': '',
+        'Sarissa': 'Greek',
     },
+    stats: {
+        // Score: 3 (2 damage, 1.5 reach, 0.5 brace, -1 2h)
+        damage: '1d10',
+    }
 },
 {
     id: 'lance',
@@ -238,7 +285,7 @@ EQUIPMENT = EQUIPMENT.concat([
         charging: true,
     },
     more_traits: {
-        dive: 2,
+        dive: 2,    // Overlap with charge?
     },
     damages: {
         piercing: true,
@@ -253,26 +300,10 @@ EQUIPMENT = EQUIPMENT.concat([
         'Swooping Lance': '',
         'Flying Lance': '',
     },
-},
-{
-    id: 'shortspear',
-    categories: [
-        'polearms-spears-martial',
-    ],
-    traits: {
-        light: true,
-        thrown: true,
-    },
-    more_traits: {
-        '1H': true,
-    },
-    damages: {
-        piercing: true,
-    },
-    upgrades: [
-    ],
-    aliases: {
-    },
+    stats: {
+        // Score: 2 (1 damage, 1 charging)
+        damage: '2d4',
+    }
 },
 {
     id: 'great_lance',
@@ -282,9 +313,9 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         reach: "10'",
         charging: true,
-        'keep?': true,
     },
     more_traits: {
+        '2H': true,
     },
     damages: {
         piercing: true,
@@ -292,9 +323,13 @@ EQUIPMENT = EQUIPMENT.concat([
     upgrades: [
     ],
     aliases: {
+        'Jousting Lance': 'Europe',
     },
+    stats: {
+        // Score: 3 (3 damage, 1 charging, -1 2h)
+        damage: '2d6',
+    }
 },
-
 {
     id: 'trident',
     categories: [
@@ -307,6 +342,7 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         aquatic: true,
         thrown: true,
+        wounding: true, // Ussually barbed
     },
     more_traits: {
     },
@@ -316,11 +352,15 @@ EQUIPMENT = EQUIPMENT.concat([
     upgrades: [
     ],
     aliases: {
-        'Pitchfork': 'Improvised',
         'Military Fork': '',
         'Tiger Spear': 'China',
         'Tiger Fork': 'China',
     },
+    stats: {
+        // Score: 3.5 (1 damage, 0.5 thrown, 1 crit multiplier, 1 ap)
+        damage: '1d8',
+        crit_mult: 3,
+    }
 },
 {
     id: 'greatspear',
@@ -328,9 +368,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'polearms-spears-exotic',
     ],
     traits: {
-        'vs charge': '',
+        bracing: true,
+        impeding_brace: true, // Stops them right outside your reach if hit
     },
     more_traits: {
+        '2H': true,
     },
     damages: {
         piercing: true,
@@ -338,7 +380,15 @@ EQUIPMENT = EQUIPMENT.concat([
     upgrades: [
     ],
     aliases: {
+        'Bohemian Earspoon': '',
+        'Bear Spear': '',
+        'Spontoon': '',
+        'Boar Spear': '',
     },
+    stats: {
+        // Score: 3 (2 damage, -1 2H, 0.5 brace, 0.5 impede)
+        damage: '1d12',
+    }
 },
 {
     id: 'spetum',
@@ -346,11 +396,13 @@ EQUIPMENT = EQUIPMENT.concat([
         'polearms-spears-exotic',
     ],
     traits: {
-        'reach': "10'",
-        block: 'blades',
-        disarm: true,
+        reach: "10'",
+        ap_shield: 2,
+        trip: 4,
+        disarm: 4,
     },
     more_traits: {
+        '2H': true,
     },
     damages: {
         piercing: true,
@@ -364,11 +416,40 @@ EQUIPMENT = EQUIPMENT.concat([
         'Winged Spear': '',
         'Jumonji Yari': 'Japan',
     },
+    stats: {
+        // Score: 3 (1 damage, 1 ap, 2 skill, -1 2H)
+        damage: '1d8',
+    }
 },
-
 
 //------------------------------------
 // Javelins
+{
+    id: 'shortspear',
+    categories: [
+        'polearms-spears-martial',
+    ],
+    traits: {
+        light: true,
+        thrown: true,
+        brace: true,
+    },
+    more_traits: {
+        '1H': true,
+    },
+    damages: {
+        piercing: true,
+    },
+    upgrades: [
+    ],
+    aliases: {
+        'Throwing Spear': '',
+    },
+    stats: {
+        // Score: 2 (0.5 thrown, 1 light, 1 brace)
+        damage: '1d6',
+    }
+},
 {
     id: 'javelin',
     categories: [
@@ -377,9 +458,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'druid-allowed-martial',
     ],
     traits: {
-        thrown: true,
+        thrown: true,   // thrown only
+        bracing: true,  // ranged brace
     },
     more_traits: {
+        range: 30,
     },
     damages: {
         piercing: true,
@@ -392,16 +475,25 @@ EQUIPMENT = EQUIPMENT.concat([
         'Verutum': 'Roman',
         'Harpoon': '',
     },
+    stats: {
+        // Score: 2 (1 damage, 0.5 thrown, -0.5 ranged, 0.5 brace, 0.5 range)
+        damage: '1d8',
+    }
 },
 {
     id: 'pilum',
     categories: [
         'polearms-spears-exotic',
+        'thrown-sharp-exotic',
     ],
     traits: {
-        'shieldbreaker': true,
+        shieldbreaker: true,    // breaks x durability on shield regardless of block
+        ap_shield: 2,
+        bracing: true,
     },
     more_traits: {
+        range: 30,
+        one_use: true,
     },
     damages: {
         piercing: true,
@@ -411,6 +503,10 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
     },
+    stats: {
+        // Score: 2.5 (0.5 break, 2 ap, 0.5 thrown, -0.5 ranged, 0.5 brace, 0.5 range)
+        damage: '1d6',
+    }
 },
 
 //------------------------------------
@@ -426,6 +522,7 @@ EQUIPMENT = EQUIPMENT.concat([
         reach: "10'",
     },
     more_traits: {
+        '2H': true,
     },
     damages: {
         slashing: true,
@@ -435,6 +532,10 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
     },
+    stats: {
+        // Stats: 1 (2 damage, -1 2H)
+        damage: '1d10',
+    }
 },
 {
     id: 'glaive',
@@ -444,8 +545,10 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         reach: "10'",
+        ap_flesh: 2,
     },
     more_traits: {
+        '2H': true,
     },
     damages: {
         slashing: true,
@@ -461,6 +564,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Great Scythe': '',
         'Woldo': 'Korean',
     },
+    stats: {
+        // Score: 2.5 (0.5 on-crit, 1 ap, 2 damage, -1 2H)
+        damage: '1d10',
+        on_crit: 'cleave', 
+    }
 },
 {
     id: 'halberd',
@@ -470,6 +578,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         reach: "10'",
+        breaching: true,
     },
     more_traits: {
     },
@@ -489,6 +598,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Danish Axe': 'Danish',
         'Sparth Axe': '',
     },
+    stats: {
+        // Score: 2.5 (2 damage, -1 2H, 1 crit, 0.5 breach)
+        damage: '1d10',
+        crit_mult: 3,
+    }
 },
 {
     id: 'wolf_tooth_club',
@@ -498,8 +612,10 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         reach: "10'",
+        knockback: 2,
     },
     more_traits: {
+        '2H': true,
     },
     damages: {
         bludgeoning: true,
@@ -512,18 +628,24 @@ EQUIPMENT = EQUIPMENT.concat([
         'Wolf Tooth Club': '',
         'Tetsubo': 'Japan',
     },
+    stats: {
+        // Score: 2 (2 damage, -1 2H, 0.5 on-crit, 0.5 knockback)
+        damage: '1d10',
+        on_crit: 'knockback',
+    }
 },
 {
-    id: 'lucerne_hammer',
+    id: 'horseman_pick',
     categories: [
-        'polearms--martial',
+        'polearms--exotic',
         'axes-picks-exotic',
     ],
     traits: {
-        ap: 3,
+        ap: 4,
         reach: "10'",
     },
     more_traits: {
+        '2H': true,
     },
     damages: {
         piercing: true,
@@ -533,7 +655,12 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Bec de Corbin': 'French',
         "Horseman's Pick": '',
+        'Lucerne Hammer': '',
     },
+    stats: {
+        // Score: 3 (2 damage, -1 2H, 2 ap)
+        damage: '1d10',
+    }
 },
 {
     id: 'pole_flail',
@@ -542,7 +669,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'polearms--exotic',
     ],
     traits: {
-        ap_shield: 3,
+        ap_shield: 4,
         reach: "10'",
     },
     more_traits: {
@@ -557,6 +684,10 @@ EQUIPMENT = EQUIPMENT.concat([
         'Two Section Staff': 'China',
         'Chang Xiao Bang': 'China',
     },
+    stats: {
+        // Score: 3 (2 damage, -1 2H, 2 ap)
+        damage: '1d10',
+    }
 },
 {
     id: 'man_catcher',
@@ -565,10 +696,13 @@ EQUIPMENT = EQUIPMENT.concat([
         'monk-allowed-exotic',
     ],
     traits: {
-        'reach': "10'",
-        'grapple': true,
+        reach: "10'",
+        grapple: 4,
+        impede: true,
+        subdual: true,
     },
     more_traits: {
+        '2H': true,
     },
     damages: {
         bludgeoning: true,
@@ -582,29 +716,15 @@ EQUIPMENT = EQUIPMENT.concat([
         "Monk's Spade": '', // Monk
         'Lajatang': '', //Monk
         'Shaolin Spade': '', //Monk
-        'Pinning Pole': ''
-    },
-},
-{
-    id: 'cloth_catcher',
-    categories: [
-        'polearms--martial',
-    ],
-    traits: {
-        'reach': "10'",
-        'grapple': 'cloth 4',
-    },
-    more_traits: {
-    },
-    damages: {
-        slashing: true,
-    },
-    upgrades: [
-    ],
-    aliases: {
+        'Pinning Pole': '',
         'Soderagami': 'Japan',
         'Entangling Pole': '',
     },
+    stats: {
+        // Score: 2.5 (-1 2H, 1 damage, 1 grapple, 1 impede, 0.5 on-crit)
+        damage: '1d8',
+        on_crit: 'impede',
+    }
 },
 {
     id: 'billhook',
@@ -614,6 +734,7 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         'reach': "10'",
         'dismounting': true,
+        strange: true,
     },
     more_traits: {
         applied_to: 'long_spear, halberd, glaive'

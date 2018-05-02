@@ -5,11 +5,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'hammers-clubs-basic',
         'monk-allowed-basic',
         'druid-allowed-basic',
-        'polearms-staves-martial',
     ],
-    visible_names: {
-        'polearms': 'shortstaff',
-    },
     traits: {
     },
     more_traits: {
@@ -36,11 +32,6 @@ EQUIPMENT = EQUIPMENT.concat([
         'Bokken': 'Japan',
         'Kanabō': 'Japan',
         'Wahaika': 'Māori',
-
-        // Staffs:
-        'Hanbo': 'Japan',
-        'Cane': 'Improvised',
-        'Dang Bong': 'China',
     },
     stats: {
         // Score: 0.5 (0.5 on-crit)

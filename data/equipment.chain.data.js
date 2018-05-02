@@ -74,13 +74,14 @@ EQUIPMENT = EQUIPMENT.concat([
     categories: [
         'chains-flails-exotic',
         'monk-allowed-exotic',
+        'polearms-staves-exotic',
     ],
     traits: {
-        'ap_shield': 2,
-        'reach': "0'-10'",
+        ap_shield: 2,
+        double: true,
+        defensive: true,
     },
     more_traits: {
-        maneuver: true,
     },
     damages: {
         bludgeoning: true,
@@ -90,7 +91,7 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
     },
     stats: {
-        // Score: 3.5 (1 ap, 1.5 reach, 1 damage)
+        // Score: 3.5 (1 ap, 1 reach, 1 damage, 0.5 defensive)
         damage: '1d8',
     }
 },

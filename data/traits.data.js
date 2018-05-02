@@ -5,6 +5,9 @@ defensive: {
     'block',
     'block_blades',
     'shield_blades',
+    'defensive',
+    'defensive_flank',
+    'bracing',
     ],
 },
 penalties: {
@@ -50,7 +53,9 @@ ap: {
     'ap',
     'ap_shield',
     'ap_flesh',
-    'breaching',
+    'breaching',    // half damage through block
+    'wounding',
+    'shieldbreaking',
     ],
 },
 type: {
