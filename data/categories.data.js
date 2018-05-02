@@ -26,19 +26,21 @@ const CATEGORIES = [
     ],
 },
 {
-    id: 'close',
+    id: 'polearms',
     subcategories: [
         {
             subtitle: '',
             subid: '',
         },
         {
-            subtitle: 'Limb',
-            subid: 'limb',
+            subtitle: 'Spear',
+            subid: 'spears',
+            isolated: true,
         },
         {
-            subtitle: 'Fans',
-            subid: 'fans',
+            subtitle: 'Staves',
+            subid: 'staves',
+            isolated: true,
         },
     ],
 },
@@ -79,21 +81,19 @@ const CATEGORIES = [
     ],
 },
 {
-    id: 'polearms',
+    id: 'close',
     subcategories: [
         {
             subtitle: '',
             subid: '',
         },
         {
-            subtitle: 'Spear',
-            subid: 'spears',
-            isolated: true,
+            subtitle: 'Limb',
+            subid: 'limb',
         },
         {
-            subtitle: 'Staves',
-            subid: 'staves',
-            isolated: true,
+            subtitle: 'Fans',
+            subid: 'fans',
         },
     ],
 },
