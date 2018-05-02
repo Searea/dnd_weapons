@@ -185,7 +185,8 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         light: true,
         thrown: true,
-        wounding: true,
+        wounding: '?',
+        ap: '?',
     },
     more_traits: {
     },

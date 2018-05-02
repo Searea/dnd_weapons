@@ -58,7 +58,7 @@
       <div class="marks">
         <% _.each(trait_groups, (colour, group) => { %>
           <% if (colour) { %>
-            <span style="color: <%- colour %>;">●</span>
+            <span data-trait-group="<%- group %>" style="color: <%- colour %>;">●</span>
           <% } %>
         <% }); %>
       </div>
@@ -69,14 +69,14 @@
       <div class="info">
         <% _.map(traits, (trait_value, trait_id) => { %>
           <span class="trait">
-            <span class="trait-name"><%- trait_id %></span><% if (trait_value !== true) { %>:
+            <% if (trait_id !== 'reach') { %><span class="trait-name"><%- trait_id %></span><% } %><% if (trait_value !== true) { %><% if (trait_id !== 'reach') { %>:<% } %>
               <span class="trait-info"><%- trait_value %></span>
             <% } %>
           </span>
         <% }); %>
 
         <div class="more-info">
-          Damage<%- all_traits.multi_dmg ? '&' : ':' %>
+          Damage <%- stats.damage %><%- all_traits.multi_dmg ? '&' : ':' %>
             <% if (all_traits.slashing) { %><span title="Slashing">🗡</span><% } %>
             <% if (all_traits.piercing) { %><span title="Piercing">🔱</span><% } %>
             <% if (all_traits.bludgeoning) { %><span title="Bludgeoning">🔨</span><% } %>

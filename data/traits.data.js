@@ -1,6 +1,6 @@
 const TRAIT_GROUPINGS = {
 defensive: {
-    colour: 'green',
+    // colour: 'green',
     traits: [
     'block',
     'block_blades',
@@ -8,7 +8,7 @@ defensive: {
     ],
 },
 penalties: {
-    colour: 'red',
+    colour: 'black',
     traits: [
     'slow_recovery',
     'unbalancing',
@@ -18,16 +18,11 @@ penalties: {
     'improvised',
     'provoking',
     'unthreatening',
-    ],
-},
-requirements: {
-    colour: 'black',
-    traits: [
     'massive',
     ],
 },
 specialized: {
-    colour: 'darkslategray',
+    colour: 'orange',
     traits: [
     'specialized',
     'brace',
@@ -39,7 +34,7 @@ specialized: {
 },
 
 offensive: {
-    colour: 'orange',
+    colour: '',
     traits: [
     'brutal',
     'deadly',
@@ -50,7 +45,7 @@ offensive: {
     ],
 },
 ap: {
-    colour: 'violet',
+    // colour: 'violet',
     traits: [
     'ap',
     'ap_shield',
@@ -78,14 +73,14 @@ ranged: {
     traits: [
     'projectile',
     'thrown',
-    'unthreatening',
     'provoking',
     'ammo',
+    'ranged',
     ],
 },
 
 skills: {
-    colour: 'powderblue',
+    colour: '#7090F0',
     traits: [
     'hidden',
     'intimidating',
@@ -93,6 +88,7 @@ skills: {
     'skilled_climb',
     'skilled_rope',
     'rope',
+    'breaching',
     ],
 },
 stun: {
@@ -104,7 +100,7 @@ stun: {
 },
 
 maneuver: {
-    colour: 'skyblue',
+    // colour: 'skyblue',
     traits: [
     'distracting',
 

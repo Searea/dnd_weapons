@@ -125,7 +125,7 @@ function expandColour(colour) {
     } else if (colour.length == 6) {
         return colour;
     } else if (colour.length == 8) {
-        return colour.substr(0, 6);
+        return colour;
     }
 }
 
@@ -141,13 +141,21 @@ function addColour($elem, colour) {
         colours = colours.slice(0, 3);
     }
 
+    // Add Opacity(Alpha) if it doesn;t have it
+    use_colours = _.map(colours, (colour) => {
+        if (colour.length < 8) {
+            return colour + '85';
+        }
+        return colour;
+    });
+
     var gradient;
-    if (colours.length == 1) {
-        gradient = `#${colours[0]}85`;
-    } else if (colours.length == 2) {
-        gradient = `linear-gradient(80deg, #${colours[0]}85 45%, #${colours[1]}85 55%)`;
-    } else if (colours.length == 3) {
-        gradient = `linear-gradient(80deg, #${colours[0]}85 30%, #${colours[1]}85 35%, #${colours[1]}85 65%, #${colours[2]}85 70%)`;
+    if (use_colours.length == 1) {
+        gradient = `#${use_colours[0]}`;
+    } else if (use_colours.length == 2) {
+        gradient = `linear-gradient(80deg, #${use_colours[0]} 45%, #${use_colours[1]} 55%)`;
+    } else if (use_colours.length == 3) {
+        gradient = `linear-gradient(80deg, #${use_colours[0]} 30%, #${use_colours[1]} 35%, #${use_colours[1]} 65%, #${use_colours[2]} 70%)`;
     }
 
     $elem.attr('data-colours', _.join(colours, ' '));
@@ -549,6 +557,7 @@ function createEquipment(data) {
         visible_name: data.name,
         is_dup: data.is_dup,
         is_main: data.is_main,
+        stats: data.equipment.stats,
     }, base_equipment)));
 
     $elem.on('click', function onClick(event) {

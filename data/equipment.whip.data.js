@@ -9,14 +9,14 @@ EQUIPMENT = EQUIPMENT.concat([
         disarm: 2,
         reach: "0'-15'",
         light: true,
-        masterwork: [
-            'unprovoking'
-        ],
     },
     more_traits: {
         finesse: true,
         provoking: true,
         unthreatening: true,
+        masterwork: [
+            'unprovoking'
+        ],
     },
     damages: {
         bludgeoning: true,
@@ -45,14 +45,14 @@ EQUIPMENT = EQUIPMENT.concat([
         feint: 2,
         reach: "0'-15'",
         '2H': true,
-        masterwork: [
-            'unprovoking'
-        ],
     },
     more_traits: {
         finesse: true,
         unthreatening: true,
         provoking: true,
+        masterwork: [
+            'unprovoking'
+        ],
     },
     damages: {
         bludgeoning: true,
@@ -70,7 +70,7 @@ EQUIPMENT = EQUIPMENT.concat([
         // Score: 3.25 (1 damage, 2 reach, -1 2h, -1 provoking, 0.5 trip, 0.5 distracting, 1 crit range, 0.25 finesse)
         damage: '1d8',
         crit: 19,
-        on_crit: 'distracting', // feint vs everyone in reach (allies can use too)
+        on_crit: 'distracting', // feint or distract vs everyone in reach (allies can use too)
     }
 },
 {
@@ -108,10 +108,10 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         reach: "0-10'",
+        ap_shield: 2,
     },
     more_traits: {
         finesse: true,
-        '2H': true,
         unthreatening: true,
     },
     damages: {
@@ -121,10 +121,11 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
         'Urumi': 'Indian',
+        'Whip Sword': 'Fantasy',
     },
     stats: {
-        // Score: 3.25 (3 damage, 1.5 reach, 0.25 finesse, -0.5 unthreatening, -1 2h)
-        damage: '2d6',
+        // Score: 4.25 (2 damage, 1.5 reach, 0.25 finesse, -0.5 unthreatening, 1 ap)
+        damage: '1d10',
     }
 },
 {
@@ -141,6 +142,7 @@ EQUIPMENT = EQUIPMENT.concat([
     more_traits: {
         finesse: true,
         unthreatening: true,
+        ranged: true,
     },
     damages: {
         bludgeoning: true,
@@ -150,7 +152,7 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
     },
     stats: {
-        // Score: 4 (1.5 maneuver, 0.25 finesse, -0.5 unthreaning, 1.5 reach, 0.75 on-crit, 0.5 drag)
+        // Score: 4 (1.5 maneuver, 0.25 finesse, -0.5 unthreatening, 1.5 reach, 0.75 on-crit, 0.5 drag)
         damage: '1d6',
         on_crit: 'trip/disarm/pull',
     }
@@ -189,6 +191,11 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         ability: true,
         skilled_rope: 2, // TODO:: rebalance
+        // Grappling Whip
+        //    Gain +5 if you use the whip as a grappling hook (to Hit)
+        // Brachiate: (Whip or Long Whip Only)
+        //    Gain +5 to Jump checks (High or Long) if you're in a place with a ceiling your whip can reach
+        //    Gain +2 while using the whip to climb
     },
     more_traits: {
         strange: true,

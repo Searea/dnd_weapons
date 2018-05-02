@@ -40,6 +40,28 @@ EQUIPMENT = EQUIPMENT.concat([
     },
 },
 {
+    id: 'sling_flail',
+    categories: [
+        'thrown-rocks-exotic',
+    ],
+    traits: {
+        ability: true,
+        like: 'flail', // Any sling can be used as a light flail
+            // It counts as both weapon groups for feats and such
+            // Any magical effects apply as well (if applicable)
+            // Thus you can threaten, flank, etc with it
+            // It must be loaded with a stone
+    },
+    more_traits: {
+    },
+    damages: {
+    },
+    upgrades: [
+    ],
+    aliases: {
+    },
+},
+{
     id: 'dart',
     categories: [
         'thrown-sharp-martial',
@@ -59,6 +81,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     aliases: {
         'Fletched Dart': '',
+        'Flechette': '',
     },
 },
 {

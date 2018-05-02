@@ -25,6 +25,10 @@ body:not(.is-copying) .is-moving {
 .equipment[data-traits*="strange"] {
     opacity :.25;
 }
+.equipment[data-traits*="ability"] {
+    border: 2px dashed orangered;
+    opacity: 0.6;
+}
 
 .magnet {
     position: absolute;

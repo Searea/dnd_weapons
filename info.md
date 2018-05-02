@@ -64,6 +64,12 @@ All Damage types have a Finesse option
     1. Keen Weapons (Rare)
     2. Improved Crit (Weapon Category)
 
+Extra Actions on Crit
+ * If you can perform an extra action on crit, then choose one of the following:
+ 1. Take the crit multiplier as normal for the weapon
+ 2. Do normal damage and get the bonus action
+ 3. Replace your attack with the Bonus action, as if you rolled the crit performing it originally
+
 
 Maneuver on Crit:
 
@@ -85,6 +91,7 @@ Condition (Energ Based?)
 
  * Bleed
  * Slowed
+ * 1/2 move (caltrops)
 
 Feat Usage (or +x if you already have it)
 
@@ -132,9 +139,6 @@ Unwieldy: (rare?) used for 2H weapons which count as 1H for Str Bonus
 
 
 ## Weapon Types
-
-Twin: The offhand counts as a light weapon for TWF if the weapon is wielded as a pair
-    Kama, Butterfly swords
 
 Uncomfortable: (rare) For weapons you wear, you cannot sleep in them without gaining exhaustion
 
@@ -345,6 +349,7 @@ Specialized Counters:
     AP (Heavy)
     AP (Shield)
         Note: this also bypasses "Blocking" weapons if they apply.
+        Note: This applies for any defensive bonus a weapon provides as well
         Note: this also bypasses any active shield ability (Durability sacrificed for DR?)
     AP (Cover)
         Note if this removes the entire cover bonus, the creature is not considered to be in cover (for the sake of feats/abilities)
@@ -353,6 +358,10 @@ Specialized Counters:
     Block Blades
     Block Arrows
     Block Thrown
+    Block Light (Thrown + Melee)
+    Block 1H (Thrown + Melee)
+    Block 2H (Thrown + Melee)
+        Idea: All Blocking weapons count as Shield+0, so they can be enchanted as a shield?
 
     Break Shields
     Break Blades
@@ -369,14 +378,14 @@ Non-Combat
 
 ## Basic____________
 
-Swords:
+`Swords`:
     Basic weapon, Slash
     Sometimes Finesse?
 
-Hammers:
+`Hammers`:
     Basic Weapon, Bludgeon
 
-Spear:
+`Spear`:
     Basic Weapon, Pierce
 
 
@@ -384,7 +393,7 @@ Spear:
 
 ## Specialized______________
 
-Axes:
+`Axes`:
     Slashing
     Breaching (x2 Dmg vs Objects?)
         Also if the attack is blocked, 1/2 damage still goes through
@@ -394,37 +403,35 @@ Axes:
     Higher damage on crit
     Gouge: On crit, enter graple, if succeed, can deal damage
 
-Picks:
+`Picks`:
     Piercing
     x1.5 AP (Armour)
     Active: you can choose to instead ignore 2 points of ANY DR or 4 Hardness
 
-Hammers
+`Hammers`:
     Basic Bullrush (heavy)
     Knockback on crit (guaranteed 5ft + bullrush?)
 
-Clubs
+`Clubs`:
     TODO:: Move RAM from polearm to here and remove reach
     RAM: Area on crit, bullrush, trip?
 
-Blades
+`Blades`:
+    Crit?
 
-Sickles:
+`Sickles`:
     Slashing
     Wounding
     AP (Unarmoured)
     Finesse
     Cleave
 
-Flails:
+`Flails`:
     Bludgeoning
     AP (shield), +2 vs Cover
 
-Whips:
-    Long Reach
-    Indiana Jones
 
-Polearms:
+`Polearms`:
     Reach
     Various Misc Abilities
 
@@ -436,41 +443,48 @@ Polearms:
         The offhand counts as a light 1d6/B damage weapon
         ? with the same crit bonus (but not multiplier)
 
-Spears
+`Spears`: (Gore)
     Reach
     Various Misc Abilities
 
-Staves
+`Staves`:
     Reach?
     Various Misc Abilities
 
-Thrown Rocks
+`Thrown Rocks`
 
-Thrown Sharp
+`Thrown Sharp`
 
-Bows
+`Bows`:
 
-Blowguns
+`Blowguns`:
 
-Crossbows
+`Crossbows`:
 
 
 ## Unique____________
 
+`Whips`:
+    Long Reach, but don't threaten, and sometimes provoke
+    Indiana Jones Climb
 
-Chains:
+    Need Space? (If theres something adjacent to you, big object only, or big creatures you get a penalty)
+
+    Suited for Energy Upgrades (Lightning, Acid)
+
+`Chains`:
     Grapple?
     Inclusive Reach
     Count as thrown within their reach (for feats)
 
-Close:
+`Close`:
     Mixed
     Limb
     Can be used in Grapple (including non-light)
 
 
 
-Fans
+`Fans`:
     Perform Bonus
     “Non-Weapon” concealment
     Parry
@@ -617,22 +631,26 @@ Light (Offhand)?  1gp   1lb    1d4
 
 ### Modifiers
 
-Thrown-Only   x 1/10    1/4 weight
-Ammunition?   x 1/2
+Thrown-Only     x 1/10    1/4  weight
+Ammunition?     x 1/20    1/20 weight
+Projectile wpn? x 1.5
+Double?         x 1.5     1.5 weight
 
 Piercing?  -
 Slashing?  x2
-Bludgeon?  x1.5
+Bludgeon?  x1.5   x2 weight
 
 Simple?   -
-Martial?  x5
-Exortic?  x10
+Martial?  x 5
+Exortic?  x 10
 
 
-Finesse?  x2
+Finesse?  x 2    x.75 weight
     Not usually 2H
 
-All-Metal? x2
+All-Metal?            x  2     x 2 weight
+All-Wood?             x 1/2    x 1/2 weight
+Simple Construction?  x 1/2
 
 
 

@@ -39,7 +39,7 @@ onstart = function() {
     highlight({colour: 'green', trait_group: 'defensive'})
     highlight({colour: 'violet', trait_group: 'ap'})
     highlight({colour: 'skyblue', trait_group: 'maneuver'})
-    highlight({colour: '0082c8', trait_group: 'skills'})
+    highlight({colour: '2050cf50', trait_group: 'skills'})
     highlight({colour: 'fffac8', trait_group: 'ranged'})
     highlight({colour: 'ffb080', trait_group: 'stun'})
 
