@@ -37,6 +37,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
 },
 {
+    // Like Sickles?
     id: 'claw',
     categories: [
         'natural--martial',
@@ -67,6 +68,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
 },
 {
+    // Like Spears? or Pick
     id: 'gore',
     categories: [
         'natural--martial',
@@ -93,6 +95,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
 },
 {
+    // Like Hammers?
     id: 'slam',
     categories: [
         'natural--martial',
@@ -121,6 +124,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
 },
 {
+    // Like Spears? or Pick
     id: 'sting',
     categories: [
         'natural--martial',
@@ -189,6 +193,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
 },
 {
+    // Like Whips? or Chains?
     id: 'tail_slap',
     categories: [
         'natural--exotic',
@@ -219,6 +224,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
 },
 {
+    // Like Fans?
     id: 'wing',
     categories: [
         'natural--exotic',
@@ -228,6 +234,9 @@ EQUIPMENT = EQUIPMENT.concat([
         secondary: true,
     },
     more_traits: {
+        extra_feats: [
+            'armoured_wings', // Wings act as Shield, Block (X)
+        ],
     },
     damages: {
         bludgeoning: true,
@@ -238,6 +247,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
 },
 {
+    // Like Whips? Chains?
     id: 'tentacle',
     categories: [
         'natural--exotic',
@@ -268,6 +278,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
 },
 {
+    // Like Sickles?
     id: 'talon',
     categories: [
         'natural--exotic',
@@ -296,6 +307,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
 },
 {
+    // Like Hammers?
     id: 'kick',
     categories: [
         'natural--exotic',
