@@ -289,7 +289,6 @@ function init() {
     })
 
     // Create a full category mapping
-    category_mapping = {};
     id_mapping = {};
     EQUIPMENT.map((equipment) => {
         if (!equipment.name) {
@@ -334,15 +333,33 @@ function init() {
 
         id_mapping[equipment.id] = equipment;
 
-        var real_categories = _.filter(equipment.categories, (full_category) => {
-            var [cat_key, unused, unused] = _.split(full_category, '-');
-            var category = _.find(CATEGORIES, (data) => data.id == cat_key);
-            if (!category) {
-                throw `Category not Found: ${cat_key} from ${equipment.id}`;
-            }
+        var real_categories;
+        if (IS_RANGED) {
+            real_categories = _.map(equipment.subcategories, (subcategory) => {
+                // The ranged grouping shows the subcategories instead, find the actual category
+                var category = CATEGORY_BY_SUBCATEGORY[subcategory];
+                if (!category) {
+                    throw `Category not found for subcategory ${subcategory} equipment ${equipment.id}`;
+                }
 
-            return !category.secondary;
-        });
+                return category;
+            });
+            real_categories = _.uniq(real_categories);
+        } else {
+            real_categories = _.filter(equipment.categories, (full_category) => {
+                var [cat_key, unused, unused] = _.split(full_category, '-');
+                var category = _.find(CATEGORIES, (data) => data.id == cat_key);
+                if (!category) {
+                    throw `Category not Found: ${cat_key} from ${equipment.id}`;
+                }
+
+                return !category.secondary;
+            });
+
+            if (real_categories.length <= 0) {
+                throw `Weapon has no categories ${equipment.id}`;
+            }
+        }
 
 
         // Base formatting
@@ -372,9 +389,9 @@ function init() {
                 equipment.trait_groups[trait_group_name] = trait_group.colour;
             }
         })
-
-
     });
+
+
 
 
     // Second Pass: actually create the data
@@ -388,20 +405,50 @@ function init() {
 
         var is_dup = false;
 
-        // Setup the Equipment in each category
-        equipment.categories.map((category) => {
-            var keys  = _.split(category, '-');
+
+        // The "Ranged" page shows categories differently
+        var _category_list;
+        if (IS_RANGED) {
+            _category_list = equipment.subcategories || [];
+        } else {
+            _category_list = equipment.categories;
+        }
+
+        // Create all the equipment bubble we need
+        _category_list.map((category_key) => {
+            var category, subcategory, difficulty;
+
+            if (IS_RANGED) {
+                subcategory = category_key;
+
+                // The ranged grouping shows the subcategories instead, find the actual category
+                var category = CATEGORY_BY_SUBCATEGORY[subcategory];
+                if (!category) {
+                    throw `Category not found for subcategory ${subcategory}`;
+                }
+
+                category_key = `${category}-${subcategory}-`;
+            } else {
+                // Normally we show just the equipment
+                // Setup the Equipment in each category
+                [category, subcategory, difficulty] = _.split(category_key, '-');
+            }
 
             name = equipment['name'];
 
+            // See if it has a special name for this category
             names = equipment['visible_names'];
-            if (names && names[keys[0]]) {
-                name = `${names[keys[0]]} (${name})`;
+            if (names && names[category]) {
+                name = `${names[category]} (${name})`;
             }
 
             // Create the actual element we're linking to
             var $source = createEquipment({
                 category,
+                subcategory,
+                difficulty,
+                cat_key: category_key,
+
                 equipment,
                 name,
                 is_dup,
@@ -425,14 +472,11 @@ function init() {
 
 function createEquipment(data) {
     var base_equipment = data.equipment;
-    var category = data.category;
-
-    var [cat_key, sub_key, group_key] = _.split(category, '-');
 
     var $elem = $(equipmentTemplate(_.extend({
-        category: cat_key,
-        subcategory: sub_key,
-        difficulty: group_key,
+        category: data.category,
+        subcategory: data.subcategory,
+        difficulty: data.difficulty,
         visible_name: data.name,
         is_dup: data.is_dup,
         is_main: data.is_main,
@@ -450,10 +494,9 @@ function createEquipment(data) {
         }
     });
 
-
-    var $category_group = $(`[data-category=${category}]`);
+    var $category_group = $(`[data-category=${data.cat_key}]`);
     if (!$category_group.length) {
-        throw `Invalid Category (${category}) for equipment (${base_equipment.id})`;
+        throw `Invalid Category key (${data.cat_key}) for equipment (${base_equipment.id})`;
     }
 
     $category_group.append($elem);

@@ -7,9 +7,9 @@
   <script src="jquery.connections.js"></script>
   <script type="text/javascript">
     var EQUIPMENT = [];
-    var IS_RANGED = false;
+    var IS_RANGED = true;
   </script>
-  <script src="data/categories.data.js"></script>
+  <script src="data/ranged_categories.data.js"></script>
   <script src="data/equipment.swords.data.js"></script>
   <script src="data/equipment.polearms.data.js"></script>
   <script src="data/equipment.bows.data.js"></script>
@@ -21,7 +21,7 @@
   <script src="data/equipment.thrown.data.js"></script>
   <!-- <script src="equipment.natural.data.js"></script> -->
   <script src="data/traits.data.js"></script>
-  <script src="onstart.js"></script>
+  <script src="ranged_onstart.js"></script>
   <script src="main.js"></script>
   <link rel="stylesheet" href="main.css"></link>
 </head>
@@ -87,15 +87,10 @@
       <div class="title"><%- title %></div>
 
       <% _.map(subcategories, (subcat) => { %>
-        <div class="subcategory subcat-<%- subcat.subid %> <% if (subcat.isolated) { %>subcategory-isolated<% } %>">
+        <div class="subcategory subcat-<%- subcat.subid %> subcategory-isolated" data-category="<%- id %>-<%- subcat.subid %>-">
           <% if (subcat.subtitle) { %>
             <div class="subtitle"><%- subcat.subtitle %></div>
           <% } %>
-          <div class="groups">
-            <div class="group basic" data-category="<%- id %>-<%- subcat.subid %>-basic"></div>
-            <div class="group martial" data-category="<%- id %>-<%- subcat.subid %>-martial"></div>
-            <div class="group exotic" data-category="<%- id %>-<%- subcat.subid %>-exotic"></div>
-          </div>
         </div>
       <% }); %>
     </div>
