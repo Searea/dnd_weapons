@@ -15,8 +15,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Stump Knife': '',
     },
@@ -37,8 +35,6 @@ EQUIPMENT = EQUIPMENT.concat([
         slashing: true,
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Cestus': '',
         'Stump Knife': '',
@@ -64,8 +60,6 @@ EQUIPMENT = EQUIPMENT.concat([
         bludgeoning: true,
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Brass Knuckles': '',
         'Knuckleduster': '',
@@ -97,10 +91,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'hidden_fan',
-        'war_fan',
-    ],
     aliases: {
         'Tessen': 'Japan',
     },
@@ -119,8 +109,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Gunbai': 'Japan',
     },
@@ -141,8 +129,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Gunsen': 'Japan',
     },
@@ -167,8 +153,6 @@ EQUIPMENT = EQUIPMENT.concat([
         slashing: true,
         strange: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Foot Blade': '',
         'Shoe Knife': 'KGB',
@@ -191,8 +175,6 @@ EQUIPMENT = EQUIPMENT.concat([
         bludgeoning: true,
         strange: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -207,9 +189,6 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     damages: {
     },
-    upgrades: [
-        'locked_garrote',
-    ],
     aliases: {
         'Garrote': 'Spanish',
         'Wire': '',
@@ -230,8 +209,6 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     damages: {
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -250,8 +227,6 @@ EQUIPMENT = EQUIPMENT.concat([
         poison: true,
         piercing: true, //But 0
     },
-    upgrades: [
-    ],
     aliases: {
         'Kakute': 'Japan',
     },
@@ -273,8 +248,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Quickrazor': 'Gnome',
     },

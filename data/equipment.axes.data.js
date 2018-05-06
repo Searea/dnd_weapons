@@ -42,7 +42,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         thrown: true,
-        breaching: true, 
+        breaching: true,
         light: true,
     },
     more_traits: {
@@ -50,10 +50,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-        'double_axehead',
-        'heavy_axe',
-    ],
     aliases: {
         'Kukri': 'Nepal',
         'Tomahawk': 'Native American',
@@ -81,16 +77,13 @@ EQUIPMENT = EQUIPMENT.concat([
         'axes-axes-martial',
     ],
     traits: {
-        breaching: true, 
+        breaching: true,
     },
     more_traits: {
     },
     damages: {
         slashing: true,
     },
-    upgrades: [
-        'greataxe',
-    ],
     aliases: {
         'Battle Axe': '',
         'Saddle Axe': '',
@@ -117,8 +110,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
     stats: {
@@ -146,9 +137,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'heavy_pick',
-    ],
     aliases: {
     },
     stats: {
@@ -173,9 +161,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'greatpick',
-    ],
     aliases: {
         'War Pick': '',
         'Morning Star': '',
@@ -203,8 +188,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
     stats: {
@@ -231,8 +214,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Boarding Axe': 'Naval',
     },
@@ -251,7 +232,7 @@ EQUIPMENT = EQUIPMENT.concat([
     ],
     traits: {
         shield: 1,
-        breaching: true, 
+        breaching: true,
     },
     more_traits: {
         strange: true,
@@ -259,8 +240,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Buckler Axe': 'Dwarven',
     },
@@ -277,9 +256,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'thrown-sharp-exotic',
     ],
     traits: {
-        thrown: true, 
+        thrown: true,
         powerful: true,
-        breaching: true, 
+        breaching: true,
     },
     more_traits: {
         ranged: true, // thrown only
@@ -287,8 +266,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Double Axehead': 'Orc',
     },
@@ -317,8 +294,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Kpinga': 'African (Zande)',
         'Hunga Munga': 'African',

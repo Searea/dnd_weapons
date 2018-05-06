@@ -13,9 +13,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'heavy_flail',
-    ],
     aliases: {
         'Chigiriki': 'Japan',
     },
@@ -37,9 +34,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'greatflail',
-    ],
     aliases: {
     },
     stats: {
@@ -60,8 +54,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
     stats: {
@@ -86,8 +78,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
     stats: {
@@ -115,9 +105,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'war_chain',
-    ],
     aliases: {
         'Kusari-Fundo': 'Japan',
         'Bladed Scarf': 'Hidden', // Slashing
@@ -153,8 +140,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Spiked Chain': '',
         'Chain Hammer': '',
@@ -185,8 +170,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Ball & Chain': '',
     },
@@ -207,9 +190,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'heavy_nunchaku',
-    ],
     aliases: {
         'Nunchaku': 'Japan',
     },
@@ -234,8 +214,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Heavy Nunchaku': 'Japan',
         'Flindbar': 'Gnoll',

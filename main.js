@@ -74,15 +74,6 @@ function reset() {
     highlight({reset: true})
 }
 
-function showConnections() {
-    $('body').removeClass('hideConnections');
-    $('.relation').css({display: ''});
-}
-function hideConnections() {
-    $('body').addClass('hideConnections');
-    $('.relation').css({display: 'none'});
-}
-
 
 //---------------------------------------------
 
@@ -297,8 +288,6 @@ function init() {
         createCategory(category);
     })
 
-    var connections = [];
-
     // Create a full category mapping
     category_mapping = {};
     id_mapping = {};
@@ -419,28 +408,6 @@ function init() {
                 is_main,
             });
 
-            // Create the Deep mapping
-            var listing = _.get(category_mapping, keys);
-            if (!listing) {
-                listing = [];
-                _.set(category_mapping, keys, listing);
-            }
-            listing.push(equipment);
-
-            // prep the connections
-            if (!equipment.upgrades) {
-                return;
-            }
-
-            equipment.upgrades.map((upgrade) => {
-                connections.push({
-                    $source,
-                    from_id: equipment.id,
-                    keys,
-                    to_id: upgrade,
-                });
-            });
-
             // Mark the next copy of the weapon as a duplicate
             if (!is_dup) {
                 is_dup = true;
@@ -453,83 +420,7 @@ function init() {
         throw 'Main Items Left: ' + Object.keys(main_weapons);
     }
 
-
-    // Create the connections
-
-    var tree = [];
-
-    connections.map((connection) => {
-        var from = id_mapping[connection.from_id];
-        var to = id_mapping[connection.to_id];
-
-        if (!to) {
-            throw `Missing Upgrade ${connection.from_id} >> ${connection.to_id}`;
-        }
-
-        var $source = connection.$source;
-
-        _.map(to.outputs, ($target, category) => {
-            var keys  = _.split(category, '-');
-            if (keys[0] != connection.keys[0]) {
-                // This is too big of a link
-                return;
-            }
-
-            var sameLevel = false;
-            if (keys[2] == 'basic') {
-                sameLevel = true;
-            }
-
-            // Yay! make a connection
-            tree.push({
-                from: $source,
-                to: $target,
-                sameLevel: sameLevel,
-            })
-            connectEquipment($source, $target, sameLevel);
-        });
-    });
-
     onstart();
-}
-
-function connectEquipment($start, $end, sameLevel) {
-    var $endMagnets;
-    if (sameLevel) {
-        $endMagnets = $end.find('.magnet-right')
-    } else {
-        $endMagnets = $end.find('.magnet-left')
-    }
-
-    var $startMagnets = $start.find('.magnet-right');
-
-    // Now find the first unused magnet
-    var $endMagnet = $endMagnets.find('.magnet:not(.target)');
-    if ($endMagnet.length == 0) {
-        // Grab the middle one then...
-        $endMagnet = $endMagnets.second();
-    } else {
-        // Grab the first unused
-        $endMagnet = $endMagnet.first();
-    }
-
-    // Now find the first unused magnet
-    var $startMagnet = $startMagnets.find('.magnet:not(.target)');
-    if ($startMagnet.length == 0) {
-        // Grab the middle one then...
-        $startMagnet = $($startMagnets[1]);
-    } else {
-        // Grab the first unused
-        $startMagnet = $startMagnet.first();
-    }
-
-    $endMagnet.addClass('target');
-    $startMagnet.addClass('target');
-
-    $startMagnet.connections({
-        to: $endMagnet,
-        class: 'relation',
-    });
 }
 
 function createEquipment(data) {

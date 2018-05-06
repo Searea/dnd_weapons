@@ -59,7 +59,6 @@ onstart = function() {
     //     hide: true,
     //     is_main: false,
     // });
-    hideConnections();
 }
 
 

@@ -13,10 +13,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'longbow',
-        'composite_bow',
-    ],
     aliases: {
         'Hunting Bow': '',
         'Hankyu': 'Japan',
@@ -35,10 +31,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'greatbow',
-        'composite_bow',
-    ],
     aliases: {
         'Daikyu': 'Japan',
     },
@@ -58,8 +50,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -79,8 +69,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -98,8 +86,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Hornbow': 'Orc',
     },
@@ -119,8 +105,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Footbow': 'Raptoran',
     },
@@ -139,8 +123,6 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     damages: {
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -160,11 +142,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'heavy_crossbow',
-        'repeater_crossbow',
-        'composite_crossbow',
-    ],
     aliases: {
     },
 },
@@ -182,11 +159,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'great_crossbow',
-        'repeater_crossbow',
-        'composite_crossbow',
-    ],
     aliases: {
         'Arbalest': '',
     },
@@ -206,9 +178,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'compound_crossbow',
-    ],
     aliases: {
     },
 },
@@ -227,8 +196,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -248,8 +215,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -266,8 +231,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -284,8 +247,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -303,8 +264,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -324,9 +283,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'heavy_prodd',
-    ],
     aliases: {
     },
 },
@@ -343,8 +299,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Flask Thruster': '',
     },
@@ -362,9 +316,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'wrist_launcher',
-    ],
     aliases: {
     },
 },
@@ -382,8 +333,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Spring Dart Glove': '',
     },
@@ -405,8 +354,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Fukiya': 'Japan',
     },
@@ -424,8 +371,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -448,8 +393,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         poison: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },

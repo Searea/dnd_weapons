@@ -14,9 +14,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'war_sling',
-    ],
     aliases: {
     },
 },
@@ -34,8 +31,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -56,8 +51,6 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     damages: {
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -76,9 +69,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'spear_thrower',
-    ],
     aliases: {
         'Fletched Dart': '',
         'Flechette': '',
@@ -100,8 +90,6 @@ EQUIPMENT = EQUIPMENT.concat([
         bludgeoning: true,
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Bladed Boomerang': '', // Slashing
         'Chakram': 'China', // Slashing
@@ -120,9 +108,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'kpinga',
-    ],
     aliases: {
         'Shuriken': '',
     },
@@ -146,8 +131,6 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     damages: {
     },
-    upgrades: [
-    ],
     aliases: {
         'Manriki-Gusari': 'Japan',
         'Bola': 'Spanish',
@@ -167,8 +150,6 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     damages: {
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -188,8 +169,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Atlatl': 'North American',
         'Kestros': 'Greek',
@@ -212,9 +191,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'shotput',
-    ],
     aliases: {
         'Light Shotput': 'Orc',
     },
@@ -234,8 +210,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Heavy Shotput': 'Orc',
     },

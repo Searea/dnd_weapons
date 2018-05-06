@@ -25,13 +25,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'shortsword',
-        'dagger_hidden',
-        'stiletto',
-        'kunai',
-        'parrying_dagger',
-    ],
     aliases: {
         'Dirk': '',
         'Khanjar': 'Indian',
@@ -79,8 +72,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Switchblade': '',
         'Balisong': '',
@@ -107,9 +98,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'longsword',
-    ],
     aliases: {
         'Wakizashi': 'Japan',
         'Gladius': 'Roman',
@@ -140,9 +128,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-        'greatsword',
-    ],
     aliases: {
         'Jian': 'China',
         'Kampilan': 'Filipino',
@@ -175,8 +160,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Nodachi': 'Japan',
         'Odachi': 'Japan',
@@ -208,8 +191,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Cavalier Rapier': '',
         'Bilbo': 'Spanish, Naval',
@@ -242,8 +223,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Cicada Wing Sword': 'China',
         'Chan Zi dao': 'China',
@@ -268,8 +247,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
     stats: {
@@ -298,8 +275,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Sai': 'Japan',
         'Trident Dagger': '',
@@ -333,8 +308,6 @@ EQUIPMENT = EQUIPMENT.concat([
     more_traits: {
         strange: true,
     },
-    upgrades: [
-    ],
     damages: {
         slashing: true,
     },
@@ -359,9 +332,6 @@ EQUIPMENT = EQUIPMENT.concat([
     more_traits: {
         finesse: true,
     },
-    upgrades: [
-        'raptor_sickle'
-    ],
     damages: {
         slashing: true,
     },
@@ -393,8 +363,6 @@ EQUIPMENT = EQUIPMENT.concat([
     more_traits: {
         finesse: true,
     },
-    upgrades: [
-    ],
     damages: {
         slashing: true,
     },
@@ -420,10 +388,6 @@ EQUIPMENT = EQUIPMENT.concat([
     more_traits: {
         finesse: true,
     },
-    upgrades: [
-        'khopesh',
-        'great_scimitar',
-    ],
     damages: {
         slashing: true,
     },
@@ -470,8 +434,6 @@ EQUIPMENT = EQUIPMENT.concat([
     more_traits: {
         finesse: true,
     },
-    upgrades: [
-    ],
     damages: {
         slashing: true,
     },
@@ -504,8 +466,6 @@ EQUIPMENT = EQUIPMENT.concat([
     more_traits: {
         finesse: true,
     },
-    upgrades: [
-    ],
     damages: {
         slashing: true,
     },

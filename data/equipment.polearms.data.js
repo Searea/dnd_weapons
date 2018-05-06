@@ -18,9 +18,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'longstaff',
-    ],
     aliases: {
         'Jo': 'Japan',
         'Shillelagh': 'Irish',
@@ -44,8 +41,6 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     more_traits: {
     },
-    upgrades: [
-    ],
     aliases: {
         'Hanbo': 'Japan',
         'Cane': 'Improvised',
@@ -75,9 +70,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'feather_staff',
-    ],
     aliases: {
         'Bo': 'Japan',
     },
@@ -104,8 +96,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
     stats: {
@@ -123,14 +113,12 @@ EQUIPMENT = EQUIPMENT.concat([
         block_blades: true,
         defensive: true,
     },
-    more_traits: {        
+    more_traits: {
         hidden: 'as staff',
     },
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Brandistock': 'Italy',
     },
@@ -155,11 +143,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'longspear',
-        'trident',
-        'greatspear',
-    ],
     aliases: {
         'Yari': 'Japan',
         'Qiang': 'China',
@@ -192,10 +175,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'pike',
-        'spetum',
-    ],
     aliases: {
         'light pike': '',
         'light lance': '',
@@ -229,8 +208,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Stiletto': '',
         'Siangham': 'Malaysia, Kuntao',
@@ -264,8 +241,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Awlpike': '',
         'Sarissa': 'Greek',
@@ -290,9 +265,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'great_lance',
-    ],
     aliases: {
         'heavy lance': '',
 
@@ -320,8 +292,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Jousting Lance': 'Europe',
     },
@@ -349,8 +319,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Military Fork': '',
         'Tiger Spear': 'China',
@@ -377,8 +345,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Bohemian Earspoon': '',
         'Bear Spear': '',
@@ -407,8 +373,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Corseque': '',
         'Ranseur': '',
@@ -440,8 +404,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Throwing Spear': '',
     },
@@ -467,10 +429,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'pilum',
-        'spear_thrower',
-    ],
     aliases: {
         'Verutum': 'Roman',
         'Harpoon': '',
@@ -498,9 +456,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-        'spear_thrower',
-    ],
     aliases: {
     },
     stats: {
@@ -527,9 +482,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-        'glaive',
-    ],
     aliases: {
     },
     stats: {
@@ -553,8 +505,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Guan Dao': 'China',
         'Naginata': 'Japan',
@@ -567,7 +517,7 @@ EQUIPMENT = EQUIPMENT.concat([
     stats: {
         // Score: 2.5 (0.5 on-crit, 1 ap, 2 damage, -1 2H)
         damage: '1d10',
-        on_crit: 'cleave', 
+        on_crit: 'cleave',
     }
 },
 {
@@ -585,8 +535,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Bardiche': '',
         'Pole-Axe': '',
@@ -620,8 +568,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Planson': '',
         "Monk's Cudgel": '',
@@ -650,8 +596,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Bec de Corbin': 'French',
         "Horseman's Pick": '',
@@ -677,9 +621,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'three_section_staff',
-    ],
     aliases: {
         'Two Section Staff': 'China',
         'Chang Xiao Bang': 'China',
@@ -707,8 +648,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Pincer Staff': '',
         'Sasumata': 'Japan',
@@ -741,8 +680,6 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     damages: {
     },
-    upgrades: [
-    ],
     aliases: {
         'Bill': '',
         'Hooked Spear': '',

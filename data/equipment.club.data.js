@@ -13,10 +13,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'sap',
-        'greatclub',
-    ],
     aliases: {
         'Cudgel': '',
         'Bludgeon': '',
@@ -53,9 +49,6 @@ EQUIPMENT = EQUIPMENT.concat([
         subdual: true,
         bludgeoning: true,
     },
-    upgrades: [
-        'truncheon',
-    ],
     aliases: {
     },
     stats: {
@@ -78,8 +71,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Tigerskull Club': '',
         'Giant Mallet': '',
@@ -113,10 +104,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-        'heavy_hammer',
-        'heavy_pick',
-    ],
     aliases: {
         'Light Mace': '',
         'thrown Hammer': '',
@@ -139,9 +126,6 @@ EQUIPMENT = EQUIPMENT.concat([
         bludgeoning: true,
         ap: 2,
     },
-    upgrades: [
-        'greathammer',
-    ],
     aliases: {
         'Heavy Mace': '',
         'Battle Hammer': '',
@@ -171,15 +155,13 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Sledgehammer': '',
         'Earth Breaker': '',
         'Great Hammer': 'Goliath',
         'Great Maul': '',
         'Great Mace': '',
-    }, 
+    },
     stats: {
         // Score: 4.5 (3 damage, 1.5 ap, 1 knockback, -1 2h)
         damage: '1d12',
@@ -203,8 +185,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Jitte': 'Japan',
         'Hachiwari': 'Japan',
@@ -238,8 +218,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Skull Ram': 'Orc',
         'Portable Ram': '',

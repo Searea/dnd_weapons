@@ -29,75 +29,8 @@ body:not(.is-copying) .is-moving {
     border: 2px dashed orangered;
     opacity: 0.6;
 }
-
-.magnet {
-    position: absolute;
-
-    color: grey;
-    font-size: 10px;
-}
-.magnet:not(.target) {
-    display: none;
-}
-.left-magnet-1 {
-    left: -4px;
-    top: -6px;
-}
-.left-magnet-2 {
-    left: -6px;
-    top: 3px;
-}
-.left-magnet-3 {
-    left: -4px;
-    top: 12px;
 }
 
-.right-magnet-1 {
-    right: -4px;
-    top: -6px;
-}
-.right-magnet-2 {
-    right: -6px;
-    top: 3px;
-}
-.right-magnet-3 {
-    right: -4px;
-    top: 12px;
-}
-
-.relation {
-    border-color: lightgrey;
-    border-style: solid;
-
-    border-radius: 20%;
-    z-index: -10;
-}
-
-.left-magnet-1.target::after {
-    content: "\25b6";
-    position: absolute;
-    top: 2px;
-    right: 7px;
-    color: lightgrey;
-}
-/*.left-magnet-2.target::after {
-    content: "\25b6";
-    position: absolute;
-    top: 2px;
-    right: 7px;
-    color: grey;
-}
-.left-magnet-3.target::after {
-    content: "\25b6";
-    position: absolute;
-    top: 2px;
-    right: 7px;
-    color: grey;
-}
-*/
-.hideConnections .magnet {
-    display: none;
-}
 
 
 .info.hide {

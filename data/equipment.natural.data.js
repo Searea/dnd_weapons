@@ -30,8 +30,6 @@ EQUIPMENT = EQUIPMENT.concat([
         piercing: true,
         multi_dmg: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'tooth': '',
     },
@@ -62,8 +60,6 @@ EQUIPMENT = EQUIPMENT.concat([
         piercing: true,
         multi_dmg: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -87,8 +83,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'horn': '',
         'tusk': '',
@@ -117,8 +111,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'slap': '',
     },
@@ -143,8 +135,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -160,8 +150,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -187,8 +175,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         piercing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -218,8 +204,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -241,8 +225,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -272,8 +254,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -301,8 +281,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -328,8 +306,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'hooves': '',
     },

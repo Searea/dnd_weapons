@@ -22,10 +22,6 @@ EQUIPMENT = EQUIPMENT.concat([
         bludgeoning: true,
         subdual: true,
     },
-    upgrades: [
-        'long_whip',
-        'rope_dart',
-    ],
     aliases: {
         "Cat'o Nine Tails": '',
     },
@@ -57,8 +53,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Kyoketsu Shoge': 'Japan',
         'Nine-Section Whip': 'Japan',
@@ -88,9 +82,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-        'urumi',
-    ],
     aliases: {
         'Heavy Whip': '',
         'War Whip': '',
@@ -117,8 +108,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Urumi': 'Indian',
         'Whip Sword': 'Fantasy',
@@ -147,8 +136,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         bludgeoning: true,
     },
-    upgrades: [
-    ],
     aliases: {
     },
     stats: {
@@ -175,8 +162,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Braid Whip': '',
         'Braid Knife': 'Halfling',
@@ -202,8 +187,6 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     damages: {
     },
-    upgrades: [
-    ],
     aliases: {
     },
 },
@@ -224,8 +207,6 @@ EQUIPMENT = EQUIPMENT.concat([
     damages: {
         slashing: true,
     },
-    upgrades: [
-    ],
     aliases: {
         'Flying Talon': 'Japan',
         'Flying Claw': 'Japan',
