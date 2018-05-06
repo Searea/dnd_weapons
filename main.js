@@ -344,7 +344,6 @@ function init() {
         }
 
         id_mapping[equipment.id] = equipment;
-        equipment.outputs = {};
 
         var real_categories = _.filter(equipment.categories, (full_category) => {
             var [cat_key, unused, unused] = _.split(full_category, '-');
@@ -385,16 +384,7 @@ function init() {
             }
         })
 
-        // _.each(equipment.all_traits, (value, key) => {
 
-        //     var group = findGroup(key);
-        //     if (!group) {
-        //         return;
-        //     }
-        //     var colour = TRAIT_GROUPINGS[group].colour;
-
-        //     equipment.trait_groups[group] = colour;
-        // });
     });
 
 
@@ -428,8 +418,6 @@ function init() {
                 is_dup,
                 is_main,
             });
-
-            equipment.outputs[category] = $source;
 
             // Create the Deep mapping
             var listing = _.get(category_mapping, keys);
@@ -572,18 +560,6 @@ function createEquipment(data) {
     });
 
 
-    // $elem.draggable({
-    //     tolerance: "pointer",
-    //     helper: 'clone',
-    //     start: function startDrag(event, ui) {
-    //     var $source = $(this);
-    //     $source.addClass('is-moving');
-    //     },
-    //     stop: function startDrag(event, ui) {
-    //     var $source = $(this);
-    //     $source.removeClass('is-moving');
-    //     }
-    // });
     var $category_group = $(`[data-category=${category}]`);
     if (!$category_group.length) {
         throw `Invalid Category (${category}) for equipment (${base_equipment.id})`;
@@ -600,55 +576,6 @@ function createCategory(data) {
     }
 
     var $elem = $(categoryTemplate(data));
-    var $groups = $elem.find('.group')
-
-    // $groups.droppable({
-    //     cursor: 'move',
-    //     axis: 'x',
-    //     drop: function drop(event, ui) {
-    //         var $origEquip = ui.draggable;
-    //         var $target = $(event.target);
-    //         var $source = $origEquip.parents('.group').first();
-
-    //         var sourceCategory = $source.attr('data-category');
-    //         var targetCategory = $target.attr('data-category');
-
-    //         // Ensure moving between categories does nothing (just sorts)
-    //         if (sourceCategory === targetCategory) {
-    //             return;
-    //         }
-
-    //         // Also ensure we don't create duplicates
-
-    //         var equipment_id = $origEquip.attr('data-equipment')
-    //         var equipment = id_mapping[equipment_id];
-
-    //         var targetArray = _.get(category_mapping, _.split(targetCategory, '-'));
-
-    //         // Update the actual Data
-    //         if (!isCopying) {
-    //             _.remove(equipment.categories, sourceCategory);
-    //             var sourceArray = _.get(category_mapping, _.split(sourceCategory, '-'));
-    //             _.remove(sourceArray, equipment);
-    //         }
-    //         _.add(equipment.categories, targetCategory);
-    //         targetArray.push(equipment);
-
-    //         // Now update the visible data, replacing the old ones
-    //         $origEquip.remove();
-
-    //         if (isCopying) {
-    //             createEquipment({
-    //                 equipment,
-    //                 category: sourceCategory,
-    //             });
-    //         }
-    //         createEquipment({
-    //             equipment,
-    //             category: targetCategory,
-    //         });
-    //     },
-    // });
 
     $elem.data('equipment', data);
     $('body').append($elem);
@@ -656,29 +583,6 @@ function createCategory(data) {
     return $elem;
 
 }
-
-
-
-
-
-
-
-//---------------------------------------------
-// API
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
