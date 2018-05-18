@@ -29,6 +29,13 @@ body:not(.is-copying) .is-moving {
     border: 2px dashed orangered;
     opacity: 0.6;
 }
+.equipment[data-traits*="upgrade"] {
+    border: 2px dashed lightgreen;
+    opacity: 0.6;
+}
+.equipment[data-traits*="ammo"] {
+    border: 2px dashed lightblue;
+    opacity: 0.6;
 }
 
 
