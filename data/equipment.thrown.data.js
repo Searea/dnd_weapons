@@ -174,6 +174,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'Kestros': 'Greek',
         'Spear Sling': '',
         'Amentum': 'Greek',
+        'Woomera': 'Australian',
     },
 },
 {

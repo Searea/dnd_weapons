@@ -21,6 +21,7 @@ EQUIPMENT = EQUIPMENT.concat([
     aliases: {
         'Jo': 'Japan',
         'Shillelagh': 'Irish',
+        'совня (Sovnya)': 'Russian',
     },
     stats: {
         // Score: 1.5 (1 double, 0.5 defensive)
@@ -210,7 +211,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     aliases: {
         'Stiletto': '',
-        'Siangham': 'Malaysia, Kuntao',
+        'Siangham': 'Malaysia, Kuntao', // Questionable
         'Iron Brush': 'China',
         'Gandasa': 'Indian',
         'Stake': '<Improvised>',
@@ -406,6 +407,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     aliases: {
         'Throwing Spear': '',
+        'Rochin': 'Korean',
     },
     stats: {
         // Score: 2 (0.5 thrown, 1 light, 1 brace)
@@ -639,7 +641,8 @@ EQUIPMENT = EQUIPMENT.concat([
     traits: {
         reach: "10'",
         grapple: 4,
-        impede: true,
+        ensnaring: true, // If used for a grapple, target can't approach closer than your reach
+            // They also can't pull away without an opposing roll
         subdual: true,
     },
     more_traits: {
@@ -660,9 +663,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'Entangling Pole': '',
     },
     stats: {
-        // Score: 2.5 (-1 2H, 1 damage, 1 grapple, 1 impede, 0.5 on-crit)
+        // Score: 2.5 (-1 2H, 1 damage, 1 grapple, 1 ensnaring, 0.5 on-crit)
         damage: '1d8',
-        on_crit: 'impede',
+        on_crit: 'ensnaring',
     }
 },
 {
