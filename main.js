@@ -372,6 +372,9 @@ function init() {
             // Damage types
             damages: {},
             aliases: {},
+                // Format:
+                // 'Name': 'Origin Culture (Subculture) <Variant>, Second Culture',
+                // Variants: 'Naval', 'Modern', 'Improvised'
 
             // Specials
             variant: false,

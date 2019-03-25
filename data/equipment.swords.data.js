@@ -30,7 +30,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'Khanjar': 'Indian',
         'Janbiya': 'Arabic',
         'Knife': '',
-        'Shiv': 'Improvised',
+        'Shiv': '<Improvised>',
         'Tanto': 'Japan',
         'Kaiken': 'Japan',
         'Haladie': 'Syria, Indian',
@@ -401,7 +401,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'Dao': 'China',
         'Sablja (Сабля)': 'Russian',
         'Kyu Gunto': 'Japan',
-        'Kaiguntō': 'Japan (Naval)',
+        'Kaiguntō': 'Japan <Naval>',
         'Tulwar': 'Indian',
         'Sica': '',
         'Nimcha': 'Africa',
@@ -411,7 +411,8 @@ EQUIPMENT = EQUIPMENT.concat([
         'Tanmogayi': 'African',
         'Lightblade': 'Elf',
         'Sawtooth Saber': '',
-        'Skallagrim': 'Modern Variant',
+        'Skallagrim': '<Modern>',
+        'Cutlass': '<Naval>',
     },
     stats: {
         // Score: 2.75 (1 crit range, 0.5 on-crit, 0.25 finesse, 1 ap)

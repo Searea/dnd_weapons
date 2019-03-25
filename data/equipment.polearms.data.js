@@ -43,7 +43,7 @@ EQUIPMENT = EQUIPMENT.concat([
     },
     aliases: {
         'Hanbo': 'Japan',
-        'Cane': 'Improvised',
+        'Cane': '<Improvised>',
         'Dang Bong': 'China',
     },
     stats: {
@@ -213,7 +213,7 @@ EQUIPMENT = EQUIPMENT.concat([
         'Siangham': 'Malaysia, Kuntao',
         'Iron Brush': 'China',
         'Gandasa': 'Indian',
-        'Stake': 'Improvised',
+        'Stake': '<Improvised>',
         'Fiji Fork': '',
         'Quadrens': 'Roman',
         'Long Knife': 'Drow',

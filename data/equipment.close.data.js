@@ -193,9 +193,9 @@ EQUIPMENT = EQUIPMENT.concat([
         'Garrote': 'Spanish',
         'Wire': '',
         'Cord': '',
-        'Chain': 'Improvised',
-        'Piano Wire': 'Improvised',
-        'Fishing Line': 'Improvised',
+        'Chain': '<Improvised>',
+        'Piano Wire': '<Improvised>',
+        'Fishing Line': '<Improvised>',
     },
 },
 {

@@ -26,7 +26,7 @@ Crits change:
  * Basic crit now maximizes your weapon dice
     * Improved Crit == x2, x3 (rare)... which would maximize the base damage dice, and add more
     * Crit range is also stronger, so 20+, 19+, or 18+ (rare)
- * Exception: Vorpral, you still confirm (So its not a super-common effect)
+ * Exception: Vorpal, you still confirm (So its not a super-common effect)
  * Warning! Coup-de grace: usually does automatical critical damage
     * Scythe is usually a great combo with "Hold Person"
  * https://www.d20pfsrd.com/feats/combat-feats/critical-feats
@@ -100,88 +100,89 @@ Feat Usage (or +x if you already have it)
 
 ## Offensive Properties
 
-Brace: If you use a readied Action to set a brace weapon against a charge, you deal double Damage on a successful hit against a charging character (Includes str, feats, & weapon enhancement)
+*Brace*: If you use a readied Action to set a brace weapon against a charge, you deal double Damage on a successful hit against a charging character (Includes str, feats, & weapon enhancement)
     (On the first hit only)
-    Defensive Brace: +2 AC against an opponent you hit when bracing
+    *Defensive Brace*: +2 AC against an opponent you hit when bracing
 
-Charging: Does double damage when charging (on the first hit with the weapon only)
+*Charging*: Does double damage when charging (on the first hit with the weapon only)
     If you are using multiple weapons, they each would get one hit doubled
 
-Brutal: Reroll any 1s on the base damage dice for this weapon
+*Brutal*: Reroll any 1s on the base damage dice for this weapon
     Good for 2d6 vs brutal 1d12 (same avg)
 
-Deadly: (rare) When you use this weapon to deliver a coup de grace, it gains a +4 bonus to damage when calculating the DC of the Fortitude saving throw to see whether the target of the coup de grace dies from the attack. The bonus is not added to the actual damage of the coup de grace attack.
+*Deadly*: (rare) When you use this weapon to deliver a coup de grace, it gains a +4 bonus to damage when calculating the DC of the Fortitude saving throw to see whether the target of the coup de grace dies from the attack. The bonus is not added to the actual damage of the coup de grace attack.
 
-Wounding: Every damage counts as 2 for the purposes of wounding
+*Wounding*: Every damage counts as 2 for the purposes of wounding
 
-Hard-Hitting: (For Light weapons) This may be wielded in two hands for a 1.5 str bonus to damage
+*Hard-Hitting*: (For Light weapons) This may be wielded in two hands for a 1.5 str bonus to damage
+
 
 
 
 ## Defensive
 
-Block (X): Grants a +X shield bonus against the weapon type (unless flat-footed)
+*Block (X)*: Grants a +X shield bonus against the weapon type (unless flat-footed)
     Arrows (+bolts, darts, throw stones, etc), Light Thrown
 
-Unbalancing (-X): Applies a -X (default -1) dodge Penalty AC while wielding one
+*Unbalancing (-X)*: Applies a -X (default -1) dodge Penalty AC while wielding one
     Warmace?
 
 
 ## Penalties
 
-Slow Recovery: After making an attack with this weapon you take a -2 penalty to AC per attack
+*Slow Recovery*: After making an attack with this weapon you take a -2 penalty to AC per attack
 
-Weak: You do not add your str bonus to damage
+*Weak*: You do not add your str bonus to damage
 
-Unwieldy: (rare?) used for 2H weapons which count as 1H for Str Bonus
+*Unwieldy*: (rare?) used for 2H weapons which count as 1H for Str Bonus
     Finesse 2H such as Chains
 
 
 
 ## Weapon Types
 
-Uncomfortable: (rare) For weapons you wear, you cannot sleep in them without gaining exhaustion
+*Uncomfortable*: (rare) For weapons you wear, you cannot sleep in them without gaining exhaustion
 
-Nonlethal (§): These weapons deal nonlethal Damage
+*Nonlethal (§)*: These weapons deal nonlethal Damage (Subdual)
 
-Versatile: Increased damage when used 2 handed? (For most 1/2 handers), maybe call them 1½ handers
+*Versatile*: Increased damage when used 2 handed? (For most 1/2 handers), maybe call them 1½ handers
     https://dnd-wiki.org/wiki/SRD5:Weapon#Versatile
 
-Double: You can use a double weapon to fight as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. You can choose to wield one end of a double weapon two-handed, but it cannot be used as a double weapon when wielded in this way—only one end of the weapon can be used in any given round.
+*Double*: You can use a double weapon to fight as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. You can choose to wield one end of a double weapon two-handed, but it cannot be used as a double weapon when wielded in this way—only one end of the weapon can be used in any given round.
 
-Light: Can be used for TWF
+*Light*: Can be used for TWF
 
-Limb: Is attached, Can hold another weapon, Can only be used if the relevant hand is free
+*Limb*: Is attached, Can hold another weapon, Can only be used if the relevant hand is free
     If it is magical and has weapon-like enhancements they only apply when actually wielding it (hand is free)
 Attached: (rare) A weapon with the Attached quality grants a +4 weapon bonus to your Maneuver Defense to prevent you being disarmed. However, donning or removing an Attached weapon is a full round action.
 
-Finesse (X): This weapon uses Dex instead of Str for toHit Rolls
+*Finesse (X)*: This weapon uses Dex instead of Str for toHit Rolls
     If there is a number listed, you need a minimum Dex; Otherwise you suffer an additional -4 Proficiency penalty
 Finesse-able (X): This weapon can be used as a finesse weapon if the user desires
     If there is a Dex requirement, that is only when using it as a finesse weapon
 
-Massive (X): This weapon has a minimum Str to use properly, suffering an additional -4 proficiency penalty if you do not meet it
+*Massive (X)*: This weapon has a minimum Str to use properly, suffering an additional -4 proficiency penalty if you do not meet it
     May never be wielded one-handed
     If the user is holding this weapon, and is surprised, they must still take a "draw weapon" action to use the weapon
     If the user has attached it to their back, then this weapon takes an extra move action to draw (Usually a full-round) and stow it
     Even if they have quickdraw that would only reduce it to the extra move action
 
-Improvised Weapon: Things often used as weapons, but not made for this
+*Improvised Weapon*: Things often used as weapons, but not made for this
     Always have a -4 proficiency penalty
     Usually 1d4, 20x2, 5ft range for thrown
     Usually filtered out of weapon lists
 
     Most weapons can be used in a strange manner as an improvised weapon (Shortened Polearms, Throwing strange Weapons)
 
-Reach (Xft-Yft): Can attack and threaten the listed squares, if only one number is supplied, then it can only do so at that precise range.
+*Reach (Xft-Yft)*: Can attack and threaten the listed squares, if only one number is supplied, then it can only do so at that precise range.
     Unthreatening: This reach weapon does not threaten any squares it can reach, and its attacks are treated like a ranged attack.
 
-Primitive: This weapon can be build with materials at hand, but it then gains the Fragile (1) Quality
+*Primitive*: This weapon can be build with materials at hand, but it then gains the Fragile (1) Quality
 
-Fragile (X): Cannot take the beating that sturdier weapons can. A fragile weapon gains the broken condition if the wielder rolls a natural 1 on an attack roll with the weapon. If a fragile weapon is already broken, the roll of a natural 1 destroys it instead. Masterwork and magical fragile weapons lack these flaws unless otherwise noted in the item description.
+*Fragile (X)*: Cannot take the beating that sturdier weapons can. A fragile weapon gains the broken condition if the wielder rolls a natural 1 on an attack roll with the weapon. If a fragile weapon is already broken, the roll of a natural 1 destroys it instead. Masterwork and magical fragile weapons lack these flaws unless otherwise noted in the item description.
 
 
-Long: This weapon has trouble being used in confined spaces
+*Long*: This weapon has trouble being used in confined spaces
     Longbows, longStaves, Polearms, Great weapons
     Efficient Quiver can store them
     Stick in the ground as a "Sheathe?"
@@ -194,104 +195,147 @@ Long: This weapon has trouble being used in confined spaces
 
 ## Maneuver
 
-Hooked: A successful strike on an enemy allows you to perform a trip or drag maneuver as a swift action, treating this weapon as a trip/drag weapon for this attack.
+*Hooked*: A successful strike on an enemy allows you to perform a trip or drag maneuver as a swift action, treating this weapon as a trip/drag weapon for this attack.
 
-Dismount (X): A mounted opponent hit by this weapon takes a –X penalty to Stay in Saddle
+*Dismount (X)*: A mounted opponent hit by this weapon takes a –X penalty to Stay in Saddle
     Counts as a trip weapon for tripping a mounted opponent with a +X to trip
     (Default 2)
 
-Battering (X): +X (Default 2) to Bull Rush and Overrun
+*Battering (X)*: +X (Default 2) to Bull Rush and Overrun
     Crit == free bullrush instead?
 
-Disarm (X): Add a bonus when disarming the opponent with this weapon (Default: +2)
+*Disarm (X)*: Add a bonus when disarming the opponent with this weapon (Default: +2)
     Does not provoke an AoO when disarming
-Disarm Blades (X): Adds a bonus only against blades, as well as bladed spears (Default: +4)
-Sunder (X): Add a bonus when sundering the opponent's equipment (Deafult: +2)
-Sunder Blades (X): Adds a bonus only against blades, as well as bladed spears (Default: +4)
-Sunder Shields (X): Adds a bonus only against shields (Default: +4)
+*Disarm Blades (X)*: Adds a bonus only against blades, as well as bladed spears (Default: +4)
+*Sunder (X)*: Add a bonus when sundering the opponent's equipment (Deafult: +2)
+*Sunder Blades (X)*: Adds a bonus only against blades, as well as bladed spears (Default: +4)
+*Sunder Shields (X)*: Adds a bonus only against shields (Default: +4)
 
-Grapple (X): Adds a bonus when grappling with this weapon
+*Grapple (X)*: Adds a bonus when grappling with this weapon
     Does not provoke an AoO when initiating a grapple
-Locking: On a successful critical hit with a weapon of this type, you can attempt a combat maneuver check to grapple your opponent as a free action.
+*Locking*: On a successful critical hit with a weapon of this type, you can attempt a combat maneuver check to grapple your opponent as a free action.
     This grapple attempt does not provoke an attack of opportunity from the creature you are attempting to grapple if that creature is not threatening you.
     While you grapple the creature using a grappling weapon, you can only move or damage the creature on your turn. You are still considered grappled, though you do not have to be adjacent to the creature to continue the grapple. If you move far enough away that the creature you're grappling is no longer within the weapon's reach, you end the grapple with that action.
 
-Distract (X): You gain a +X (Default +2) bonus on Bluff skill checks to feint or distract in combat
+*Distract (X)*: You gain a +X (Default +2) bonus on Bluff skill checks to feint or distract in combat
 
-Trip (X): You can use a trip weapon to make trip attacks. If you are tripped during your own trip attempt, you can drop the weapon to avoid being tripped. You do not provoke using a trip weapon. If there is a listed number (Default 0) you apply that bonus to trip attacks
+*Trip (X)*: You can use a trip weapon to make trip attacks. If you are tripped during your own trip attempt, you can drop the weapon to avoid being tripped. You do not provoke using a trip weapon. If there is a listed number (Default 0) you apply that bonus to trip attacks
 
-Entangle: as a net
+*Entangle*: as a net
 
-Plant-Cutter: Does bonus damage against plants
-    +2 bonus to Survival when moving faster through brush (e.g. Trailblazing)
-
-Vs Environment (X): Ignores hardness of objects (X Points)
 
 
 ## Special
 
-Hidden (X): (Rare) Bonus +X (Default 2) when using Sleight of Hand or Disguise to conceal the weapon
+Most of these don't cost any points UNLESS they're useful mid-combat
+   (Otherwise they become "utility only" weapons)
+
+*Hidden (X)*: (Rare) Bonus +X (Default 2) when using Sleight of Hand or Disguise to conceal the weapon
     Some weapons aren't hidden, but concealed as something else
-Stealthy (X): Attacking from stealth, the sniping penalty is reduced to by the listed number
+*Stealthy (X)*: Attacking from stealth, the sniping penalty is reduced to by the listed number
     ? By Default this reduces the penalty from -20 to -10, however perhaps the penalty is already too high?
 
-Performance: When wielding this weapon, if an attack or combat maneuver made with this weapon prompts a performance combat check, you gain a +2 bonus on that check.
+*Performance*: When wielding this weapon, if an attack or combat maneuver made with this weapon prompts a performance combat check, you gain a +2 bonus on that check.
     If used on a Perform(Wardance) or similar check you also gain the +2
 
-Intimidating (X): Provides a +X (Default 2) toolkit bonus to intimidate checks
+*Intimidating (X)*: Provides a +X (Default 2) toolkit bonus to intimidate checks
     Usually this applies only to demoralizing in combat
 
+### Environmental
 
-Monk: A monk weapon can be used by a monk to Perform a flurry of blows
+Usually non-combat, but can be useful in certain environments, even in combat
+
+*Plant-Cutter*: Does bonus damage against plants
+    +2 bonus to Survival when moving faster through brush (e.g. Trailblazing)
+
+    e.g. Machete (Clear a path as a 1/2 Move Action)
+
+*Vs Environment (X)*: Ignores hardness of objects (X Points)
+
+*Brachiate* Jump around trees using a rope/whip
+    Gain +5 to Jump checks (High or Long) if you're in a place with a ceiling your whip can reach
+    Gain +2 while using the whip to climb
+
+    e.g. Whips (see skill: Whip Climber)
+
+*Grappling Hook*: Get to inaccessible Places
+
+*Underwater*: Some for of benefit while used underwater, more of a tag
+    Usually removes underater penalties for the weapon type
+    Note: "useless weapons" are basically an monster immunity, while underwater.
+        "Ranged Nerf" weapons are effectivelly a "closed corridors" environment
+
+*Demolitioner*: Used to precisely damage structures
+    E.g. A huge, rickety tree or giant crumbling stalagmite could be pushed over and either cause damage to creatures by falling on them, or create interesting divisions on the battlefield.
+
+    Can be used to knock over supports (e.g. for a balcony)
+        E.g. Scaffolding for statues, incomplete construction
+        Ogre weapons (being Huge) often gain this benfit
+
+    E.g. Orc Ram
+
+*Lantern*: Can be used as a light source
+
+*Piton*: Can be used as a piton
+    As part of a Move action you can embed the weapon in the wall (assuming it can support pitons)
+        The weapon+arm is busy, but gives you a climb bonus, until you let go (as a free action)
+    Note: Usually you want to do this at the end of a move (aka after a climb roll)
+        This prevents enemies from knocking you down easily (due to your improved climb)
+    Note: A skilled user can "quick-release" the weapon, when pulling on it from above.
+        AKA you leave the weapon in, and attached to the rope, covering you in case you fall
+        When you put in the next "piton" you pull up, and draw your first weapon back in
 
 
 ## Ranged
 
-Thrown: The wielder applies his Strength modifier to Damage dealt by thrown weapons (except for splash weapons).
+*Thrown*: The wielder applies his Strength modifier to Damage dealt by thrown weapons (except for splash weapons).
     It is possible to throw a weapon that isn't designed to be thrown (that is, a melee weapon that doesn't have a numeric entry in the Range column on Table: Weapons), and a character who does so takes a –4 Penalty on the Attack Roll.
         Throwing a light or one-handed weapon is a Standard Action, while throwing a two-handed weapon is a Full-Round Action.
         Regardless of the type of weapon, such an attack scores a threat only on a natural roll of 20 and deals double Damage on a critical hit. Such a weapon has a range increment of 10 feet.
 
-___ Load: The weapon takes an action to reload between shots (the default is a Move action if unlisted)
-Reloading is a AoO provoking action
+*___ Load*: The weapon takes an action to reload between shots (the default is a Move action if unlisted)
+    Reloading is a AoO provoking action
     Bows, and most thrown weapons have an implied "Free Load" trait
-Clip (X): The weapon has a clip of X shots before it needs to be reloaded
+*Clip (X)*: The weapon has a clip of X shots before it needs to be reloaded
     Some of these weapons can have custom sized ammunition (bigger/larger clips) the number listed here is for the default clip
-Belt: Requires an assistant, feeds a continuous stream of ammo
-Cylinder: Holds X bullets, each one is reloaded as a separate action (revolvers), sometimes a speed loader can be used to reload all or part
-Internal: Holds X bullets internally, each one is reloaded as a separate action (Shotguns), no speed loaders
-Burst (X): When firing this weapon you expend the listed number of ammo, you can reroll one damage dice for each additional ammo you use for this attack.
+*Belt-Fed*: Requires an assistant, feeds a continuous stream of ammo
+*Cylinder (X)*: Holds X bullets, each one is reloaded as a separate action (revolvers), sometimes a speed loader can be used to reload all or part
+*Internal Clip (X)*: Holds X bullets internally, each one is reloaded as a separate action (Shotguns), no speed loaders
+
+*Semi-Automatic*: Auto reloads the next clip, letting you fire one extra shot (Extra Attack)
+    As usual you need to Full-Attack, and take the penalties for having an extra attack (-2 to all)
+*Burst (X)*: When firing this weapon you expend the listed number of ammo, you can reroll one damage dice for each additional ammo you use for this attack.
     Special damage dice (not from the weapon, weapon properties, weapon enhancements, etc) cannot be rerolled
     If multiple burst numbers are listed, you can choose which burst mode to use e.g. (1, 3, 5)
-    If multiple weapon fire types are listed, you can only choose one… if Burst(1) isn’t listed you cannot fire the weapon normally
-Area Burst (X): The weapon is fired as a "spray and pray”, it targets an area doing Ref 1/2 damage to it
+    If multiple weapon fire types are listed, you can only choose one…
+    If Burst(1) (or a normal fire mode) isn’t listed you cannot fire the weapon normally
+*Area Burst (X)*: The weapon is fired as a "spray and pray", it targets an area doing Ref 1/2 damage to it
     Uses X ammo per shot (Default 1)
     Often used for Automatic Weapons
-Noisy (X): Listen DC to hear the weapon being used is modified by the listed penalty (default -2)
-Projectile / Ammo: A ranged weapon that uses projectiles
-Subsonic:  Less damage (will be listed separately), but Listen DC is increased by 10 to hear the shot
+*Noisy (X)*: Listen DC to hear the weapon being used is modified by the listed penalty (default -2)
+*Projectile / Ammo*: A ranged weapon that uses projectiles
+*Subsonic*:  Less damage (will be listed separately), but Listen DC is increased by 10 to hear the shot
     Decreases range increment by 20ft
-Tracer: Any following attacks at the target for the round gain +1 Precision to Hit. Spot DC is decreased by 5
+*Tracer*: Any following attacks at the target for the round gain +1 Precision to Hit. Spot DC is decreased by 5
     Automatic weapons gain the bonus during the attack as well
 
-Prone: (rare) This ranged weapon can be used while prone (usually for crossbows)
+*Prone*: (rare) This ranged weapon can be used while prone (usually for crossbows)
     Some Thrown? Shuriken, Daggers?
     Maybe shortbows?
 
-Grenade: Uses the grenade weapon throwing Rules
-Splash (Xft, Y): In addition to listed direct damage adjacent creatures within Xft (Default 5ft) take Y damage
+
+*Grenade*: Uses the grenade weapon throwing Rules
+*Splash (Xft, Y)*: In addition to listed direct damage adjacent creatures within Xft (Default 5ft) take Y damage
     Some will have a Ref DC listed
 
-Returning: On a miss at the end of your turn you can catch it if you have a free hand
-    There must be no obstructions on its return path
-Alt: A thrown weapon that returns to the wielder in a non-magical fashion, like a boomerang. To catch a returning weapon, the thrower must make an attack roll (as if he were throwing the weapon) to hit AC 10. Failure indicates that the weapon lands in a random square adjacent to the thrower (if proficient) or 1d4 squares away (if not proficient).
+*Returning*: At the end of your turn the weapon comes back
 
-Mighty (X): Allows you to add your str bonus to damage up to the listed number
+*Mighty (X)*: Allows you to add your str bonus to damage up to the listed number
     However if for every point of might that you do not utilize in the bow you take a -2 penalty to Hit
     (Mighty +3 bow fired as a Str 13 (+1) means a +1 dmg, but -4 to hit)
     (Might +2 bow fired as a Str 18 (+4) means a +2 dmg, no penalties)
 
-Powerful: Allows you to use str based feats (Such as Power attack) normally useable on melee only weapons.
+*Powerful*: Allows you to use str based feats (Such as Power attack) normally useable on melee only weapons.
     Allows you to use str for attack rolls
     Is treated like a large boulder for affect/feats/etc so Gust of Wind, Deflect Arrows, Wind Wall, etc
 
@@ -301,23 +345,30 @@ Powerful: Allows you to use str based feats (Such as Power attack) normally usea
 
 
 ## Potential (But unused/unbalanced so far) Properties
-Barbed: Do bonus Wounds
+*Barbed*: Bleeding?
     OR AP (Unarmoured)
     Ravaging?
     Deadly?
 
-Bashing: If the opponent is using a blade/blocking/parrying item, this weapon causes the limb to go numb on a successful strike.
+*Painful*: Counts as double damage for concentration checks
+
+*Bleeding*: Counts as double damage for Bleeding Wounds
+
+*Cauterizing*: Prevents any Bleeding Wounds from this weapon
+    Can also close off a wound (if used with a heal check)?
+
+*Bashing*: If the opponent is using a blade/blocking/parrying item, this weapon causes the limb to go numb on a successful strike.
     Fort ? or numb, cannot use the hand for 1 round
     All other limbs have similar penalties for the round, feet decrease land speed by 10'
 
-Reposte: When fighting defensively, if an adjacent enemy misses you they provoke an AoO from you
+*Reposte*: When fighting defensively, if an adjacent enemy misses you they provoke an AoO from you
     You can only do base weapon damage this way?
 
-Defensive (X): When you use this weapon to fight defensively, you gain a +X (Default 1) dodge bonus to AC, double in Total Defence
+*Defensive (X)*: When you use this weapon to fight defensively, you gain a +X (Default 1) dodge bonus to AC, double in Total Defence
 
-Deflect: Techniques this weapon use involve blocking and weaving as much as they do attacking. When a creature damages you with a weapon attack while you are wielding this weapon, you may use your reaction to reduce the damage by your dexterity modifier. This property may be applied to piercing weapons as well.
+*Deflect*: Techniques this weapon use involve blocking and weaving as much as they do attacking. When a creature damages you with a weapon attack while you are wielding this weapon, you may use your reaction to reduce the damage by your dexterity modifier. This property may be applied to piercing weapons as well.
 
-Blocking (X): Uses durability to block, (Default x: All)
+*Blocking (X)*: Uses durability to block, (Default x: All)
     1) You must be aware (not Flat-footed, conscious, etc) in relation to the attack
     2) Uses a Reaction (AoO)
 
@@ -335,7 +386,13 @@ Blocking (X): Uses durability to block, (Default x: All)
     Feat: Increase uses of blocking by 1 (as if durability is 1 higher)
     Magic Items: Auto-Repair after an Encounter?
 
+    Upgrades: You can attach things that activate when the shield is struck with sufficient force (on block)
+        e.g. Fragile Spellgems
+        These can trigger on sunder however
 
+    Shoddy (Downgrade Quality)
+        Less 'Durability' for the shield, not always easily visible
+        If you use a shield which has no durability left, it breaks, and doesn't work (but uses your block action)
 
 
 
@@ -346,11 +403,14 @@ Blocking (X): Uses durability to block, (Default x: All)
 General Ideas:
 
 Specialized Counters:
+
     AP (Heavy)
     AP (Shield)
         Note: this also bypasses "Blocking" weapons if they apply.
         Note: This applies for any defensive bonus a weapon provides as well
         Note: this also bypasses any active shield ability (Durability sacrificed for DR?)
+            This could be a +6 replacement (+4, and cannot be blocked?)
+        Note: This affects any "Parry" equivalent ability
     AP (Cover)
         Note if this removes the entire cover bonus, the creature is not considered to be in cover (for the sake of feats/abilities)
     AP (Unarmoured)? maybe "Wounding" only works vs unarmoured?
@@ -490,7 +550,29 @@ Non-Combat
     Parry
 
 
+## Ranged  ________________
 
+`Crossbows`:
+    AP
+    Threaten short range?
+    More Damage (but slow reload)
+
+    Mighty pre-Reload (for longer time, min move action)
+
+    (Great) AP (Shield)
+        Note: Greatbow shouldn't get AP(Armour)?
+
+    TODO: Composite == Recurve
+
+
+`Bows`:
+    Faster Fire
+
+    (Great) AP (Shield)
+
+`Javelins`:
+    Thrown: (Hold Bundle)
+    AP (Shield)
 
 
 
@@ -615,6 +697,7 @@ Special
  + 1     AP (2)
  + 0.5   Brutal (reroll 1)
 
+// TODO: add more "distracting" or "hurting" vs casters concentration (counst as double damage, or as a maneuver generating "distraction")
 
 
 
@@ -654,6 +737,7 @@ Simple Construction?  x 1/2
 
 
 
+TODO: Hardness + Durability
 
 
 

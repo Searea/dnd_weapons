@@ -59,11 +59,11 @@ EQUIPMENT = EQUIPMENT.concat([
         'Parang': 'Malay',
         'Golok': 'Indonesia',
         'War Cleaver': '',
-        'Cleaver': 'Improvised',
+        'Cleaver': '<Improvised>',
         'Francesca': 'Franks, Germanic',
-        'Hand Adze': 'Improvised',
-        'Adze': 'Improvised',
-        'Mattock': 'Improvised',
+        'Hand Adze': '<Improvised>',
+        'Adze': '<Improvised>',
+        'Mattock': '<Improvised>',
     },
     stats: {
         // Throwing Axe
